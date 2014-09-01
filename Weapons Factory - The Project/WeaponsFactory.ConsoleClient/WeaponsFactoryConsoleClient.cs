@@ -8,12 +8,13 @@
         public static void Main()
         {
             var db = new WeaponsFactoryDbContext();
+            db.Database.Initialize(true);
 
             var vendor = new Vendor()
-             {
-                 Name = "TestVendorName",
-                 Address = "TestVendorAddress"
-             };
+            {
+                Name = "TestVendorName",
+                Address = "TestVendorAddress"
+            };
 
             db.Vendors.Add(vendor);
             db.SaveChanges();

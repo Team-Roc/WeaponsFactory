@@ -2,6 +2,7 @@
 {
     using System.Data.Entity;
 
+    using WeaponsFactory.Data.Migrations;
     using WeaponsFactory.Models;
 
     public class WeaponsFactoryDbContext : DbContext, IWeaponsFactoryDbContext
@@ -9,7 +10,7 @@
         public WeaponsFactoryDbContext()
             : base("WeaponsFactory")
         {
-
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<WeaponsFactoryDbContext, Configuration>());
         }
 
         public IDbSet<Category> Categories { get; set; }
