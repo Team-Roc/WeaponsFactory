@@ -1,5 +1,5 @@
 #Databases
-####Team Projects – September 2014
+####Team Project, August – September 2014
 
 ##Contributors:
 * Dimitar Katarov ([@ chichuMitku](https://github.com/chichuMitku))
