@@ -14,7 +14,8 @@
         }
 
         [Key]
-        public int CategoryID { get; set; }
+        [Column("ID")]
+        public int CategoryId { get; set; }
 
         [Required]
         [MinLength(2)]

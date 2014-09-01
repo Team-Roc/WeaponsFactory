@@ -14,7 +14,8 @@
         }
 
         [Key]
-        public int VendorID { get; set; }
+        [Column("ID")]
+        public int VendorId { get; set; }
 
         [Required]
         [MinLength(2)]

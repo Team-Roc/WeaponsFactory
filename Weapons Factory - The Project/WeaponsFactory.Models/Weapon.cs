@@ -14,20 +14,25 @@
         }
 
         [Key]
-        public int WeaponID { get; set; }
+        [Column("ID")]
+        public int WeaponId { get; set; }
 
         [Required]
         [MinLength(2)]
         [MaxLength(20)]
         public string Name { get; set; }
 
+        [MinLength(10)]
+        [MaxLength(100)]
+        public string Description { get; set; }
+
         [ForeignKey("Category")]
-        public int CategoryID { get; set; }
+        public int CategoryId { get; set; }
 
         public virtual Category Category { get; set; }
 
         [ForeignKey("Manufacturer")]
-        public int ManufacturerID { get; set; }
+        public int ManufacturerId { get; set; }
 
         public virtual Manufacturer Manufacturer { get; set; }
 

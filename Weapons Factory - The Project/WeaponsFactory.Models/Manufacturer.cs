@@ -14,7 +14,8 @@
         }
 
         [Key]
-        public int ManufacturerID { get; set; }
+        [Column("ID")]
+        public int ManufacturerId { get; set; }
 
         [Required]
         [MinLength(2)]
