@@ -17,6 +17,10 @@
 
         IDbSet<Weapon> Weapons { get; set; }
 
+        IDbSet<TEntity> Set<TEntity>() where TEntity : class;
+
+        DbEntityEntry<TEntity> Entry<TEntity>(TEntity entity) where TEntity : class;
+
         int SaveChanges();
     }
 }

@@ -22,5 +22,10 @@
         public IDbSet<Vendor> Vendors { get; set; }
 
         public IDbSet<Weapon> Weapons { get; set; }
+
+        public new IDbSet<TEntity> Set<TEntity>() where TEntity : class
+        {
+            return base.Set<TEntity>();
+        }
     }
 }
