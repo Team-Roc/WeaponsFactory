@@ -25,10 +25,10 @@
                 var currentSaleFile = "../../../JsonReports/" + sale.SaleId + ".json";
                 if (File.Exists(currentSaleFile))
                 {
-                    return;
+                    continue;
                 }
 
-                using (var fileStream = new FileStream("../../../JsonReports/" + sale.SaleId + ".json", FileMode.CreateNew))
+                using (var fileStream = new FileStream(currentSaleFile, FileMode.CreateNew))
                 using (var streamWriter = new StreamWriter(fileStream))
                 using (var jsonWriter = new JsonTextWriter(streamWriter))
                 {

@@ -32,6 +32,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -50,8 +54,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WeaponsFactory.Data\WeaponsFactory.Data.csproj">
+      <Project>{74c7ce91-bd2a-444f-8cca-04ded1472bfa}</Project>
+      <Name>WeaponsFactory.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WeaponsFactory.Models\WeaponsFactory.Models.csproj">
       <Project>{475a37e3-b81b-4dd9-ae82-a6b213b332ef}</Project>
       <Name>WeaponsFactory.Models</Name>

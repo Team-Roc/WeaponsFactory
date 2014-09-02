@@ -19,6 +19,10 @@ using Telerik.OpenAccess.Data.Common;
 using Telerik.OpenAccess.Metadata.Fluent;
 using Telerik.OpenAccess.Metadata.Fluent.Advanced;
 
+using WeaponsFactory.Data.JSONSerialization;
+using Newtonsoft.Json;
+using System.IO;
+
 namespace WeaponsFactory.DataAccess	
 {
 	public partial class WeaponsFactoryModel : OpenAccessContext, IWeaponsFactoryModelUnitOfWork
@@ -75,6 +79,27 @@ namespace WeaponsFactory.DataAccess
                 var schemaHandler = context.GetSchemaHandler();
                 EnsureDB(schemaHandler);
             }
+        }
+
+        public void DeserializeWeapons ()
+        {
+            JsonSerializer serializer = new JsonSerializer();
+            var sales = new List<Sale>();
+
+            var jsonFiles = Directory.GetFiles(@"../../../JsonReports");
+
+            foreach (var file in jsonFiles)
+            {
+                var fileStream = new FileStream(file, FileMode.Open);
+                using (fileStream)
+                using (var streamReader = new StreamReader(fileStream))
+                {
+                    sales.Add(JsonConvert.DeserializeObject<Sale>(streamReader.ReadToEnd()));
+                }
+            }
+
+            this.Add(sales.AsQueryable());
+            this.SaveChanges();
         }
 		
 		/// <summary>
