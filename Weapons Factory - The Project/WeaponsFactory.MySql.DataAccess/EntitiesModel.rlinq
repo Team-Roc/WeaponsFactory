@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="EntitiesModel" namespace="WeaponsFactory.MySql.DataAccess" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="EntitiesModel" backend="mysql" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="WeaponsFactory.MySql.DataAccess" default="true">
+      <orm:class name="Sale" uniqueId="a34de907-73e8-445d-ad68-f209cb5610c0">
+        <orm:identity>
+          <orm:single-field field-name="_saleId" />
+        </orm:identity>
+        <orm:field name="_saleId" property="SaleId" uniqueId="d7ac4c14-8294-418c-aba3-f351b687b996" type="System.Int32" />
+        <orm:field name="_weaponId" property="WeaponId" uniqueId="462e683e-3876-4ddf-b317-094fc0d64b16" type="System.Int32" />
+        <orm:field name="_weaponName" property="WeaponName" uniqueId="44ae9796-0af0-47b6-9dcc-5b0cca2236d9" type="System.String" />
+        <orm:field name="_vendorName" property="VendorName" uniqueId="08729f06-6c6f-49ff-a16f-7bd8d0d8dc95" type="System.String" />
+        <orm:field name="_quantity" property="Quantity" uniqueId="7fe57259-fc8f-4ed5-9554-f6d9d94b6232" type="System.Int32" />
+        <orm:field name="_income" property="Income" uniqueId="259d5588-997b-4af9-9ecd-396d7acfcb03" type="System.Decimal" />
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="" />
+    <orm:relational-naming-settings>
+      <orm:source-strategy>Property</orm:source-strategy>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>WeaponsFactoryReportsConnection</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>server=localhost;user id=root;database=WeaponsFactoryReports</AppConfigConnectionString>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+      <NavigationPropertyRules />
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings>
+      <ExecuteScript>true</ExecuteScript>
+      <DeploymentProject>WeaponsFactory.MySql.DataAccess</DeploymentProject>
+      <UpdateDatabaseOperation>Migrate</UpdateDatabaseOperation>
+      <ShowAllTables>true</ShowAllTables>
+    </SchemaUpdateSettings>
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>MySql</Backend>
+        <ProviderName>MySql.Data.MySqlClient</ProviderName>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="a34de907-73e8-445d-ad68-f209cb5610c0" name="Sale" namespace="WeaponsFactory.MySql.DataAccess" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="d7ac4c14-8294-418c-aba3-f351b687b996" name="SaleId" type="System.Int32" label="SaleId : System.Int32" identity="true" fieldName="_saleId" />
+      <Property Id="462e683e-3876-4ddf-b317-094fc0d64b16" name="WeaponId" type="System.Int32" label="WeaponId : System.Int32" fieldName="_weaponId" />
+      <Property Id="44ae9796-0af0-47b6-9dcc-5b0cca2236d9" name="WeaponName" type="System.String" label="WeaponName : System.String" fieldName="_weaponName" />
+      <Property Id="08729f06-6c6f-49ff-a16f-7bd8d0d8dc95" name="VendorName" type="System.String" label="VendorName : System.String" fieldName="_vendorName" />
+      <Property Id="7fe57259-fc8f-4ed5-9554-f6d9d94b6232" name="Quantity" type="int" label="Quantity : int" fieldName="_quantity" />
+      <Property Id="259d5588-997b-4af9-9ecd-396d7acfcb03" name="Income" type="decimal" label="Income : decimal" fieldName="_income" />
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="0b993b3b-7ddd-4cfb-86ee-781dfc5b8b23">
+      <domainContainer name="EntitiesModel" namespace="WeaponsFactory.MySql.DataAccess" showPropertiesCompartment="true">
+        <entitySetProperty name="Sales" namespace="WeaponsFactory.MySql.DataAccess" type="Sale" label="Sales : IQueryable&lt;WeaponsFactory.MySql.DataAccess.Sale&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

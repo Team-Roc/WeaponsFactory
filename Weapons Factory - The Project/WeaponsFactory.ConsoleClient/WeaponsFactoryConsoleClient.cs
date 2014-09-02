@@ -6,6 +6,7 @@
     using ExcelOperationsModule;
     using WeaponsFactory.Data;
     using WeaponsFactory.Models;
+    using WeaponsFactory.DataAccess;
 
     public class WeaponsFactoryConsoleClient
     {
@@ -33,7 +34,14 @@
             //data.GenerateJsonReports();
 
             //var sales = ZipExtractor.ReadZippedReports(@".\my tables.zip");
+            foreach (var v in data.Vendors.All())
+            {
+                Console.WriteLine(v.Name + " - " + v.Address);
+            }
 
+            data.GenerateJsonReports();
+
+            WeaponsFactoryModel.UpdateDatabase();
             //foreach (var sale in sales)
             //{
             //    Console.WriteLine("date: {0}, Quantity: {1}, SaleId {2}, UnitePrice: {3}, Vendor: {4}, VendorID: {5}, Weapon: {6}, WeaponID {7}", sale.Date, sale.Quantity, sale.SaleId, sale.UnitPrice, sale.Vendor, sale.VendorId, sale.Weapon, sale.WeaponId);

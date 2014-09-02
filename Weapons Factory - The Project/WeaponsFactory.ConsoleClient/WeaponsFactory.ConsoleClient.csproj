@@ -46,6 +46,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Telerik.OpenAccess, Version=2014.2.711.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2014.2.711.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="WeaponsFactoryConsoleClient.cs" />
@@ -61,6 +63,10 @@
     <ProjectReference Include="..\ExcelOperationsModule\ExcelOperationsModule.csproj">
       <Project>{6a1da147-0dae-40e3-b412-95ce83f4b3b0}</Project>
       <Name>ExcelOperationsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaponsFactory.DataAccess\WeaponsFactory.DataAccess.csproj">
+      <Project>{6f9c2621-695c-4bde-881b-157dcaa75c07}</Project>
+      <Name>WeaponsFactory.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\WeaponsFactory.Data\WeaponsFactory.Data.csproj">
       <Project>{74c7ce91-bd2a-444f-8cca-04ded1472bfa}</Project>
