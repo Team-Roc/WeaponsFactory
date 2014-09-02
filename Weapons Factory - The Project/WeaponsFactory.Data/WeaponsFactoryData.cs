@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
 
+    using WeaponsFactory.Data.JSONSerialization;
     using WeaponsFactory.Data.Repositories;
     using WeaponsFactory.Models;
 
@@ -52,6 +53,11 @@
             {
                 return this.GetRepository<Category>();
             }
+        }
+
+        public void GenerateJsonReports ()
+        {
+            SerializeJson.SerializeWeapons(this.context);
         }
 
         private IGenericRepository<T> GetRepository<T>() where T : class

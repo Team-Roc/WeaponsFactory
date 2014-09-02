@@ -23,6 +23,8 @@
             {
                 Console.WriteLine(v.Name + " - " + v.Address);
             }
+
+            data.GenerateJsonReports();
         }
     }
 }
