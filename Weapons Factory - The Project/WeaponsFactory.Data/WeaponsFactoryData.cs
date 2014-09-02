@@ -54,6 +54,14 @@
             }
         }
 
+        public IGenericRepository<Sale> Sales
+        {
+            get
+            {
+                return this.GetRepository<Sale>();
+            }
+        }
+
         private IGenericRepository<T> GetRepository<T>() where T : class
         {
             var typeOfModel = typeof(T);
