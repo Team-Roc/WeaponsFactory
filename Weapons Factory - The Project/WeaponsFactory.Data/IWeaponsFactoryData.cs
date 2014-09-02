@@ -12,5 +12,7 @@
         IGenericRepository<Weapon> Weapons { get; }
 
         IGenericRepository<Category> Categories { get; }
+
+        IGenericRepository<Sale> Sales { get; }
     }
 }

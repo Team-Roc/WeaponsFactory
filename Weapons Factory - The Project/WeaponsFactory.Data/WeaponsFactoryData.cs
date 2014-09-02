@@ -55,6 +55,14 @@
             }
         }
 
+        public IGenericRepository<Sale> Sales
+        {
+            get
+            {
+                return this.GetRepository<Sale>();
+            }
+        }
+
         public void GenerateJsonReports ()
         {
             SerializeJson.SerializeWeapons(this.context);
