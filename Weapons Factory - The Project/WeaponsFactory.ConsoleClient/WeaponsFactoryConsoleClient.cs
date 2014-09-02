@@ -1,5 +1,7 @@
 ﻿namespace WeaponsFactory.ConsoleClient
 {
+    using System;
+
     using WeaponsFactory.Data;
     using WeaponsFactory.Models;
 
@@ -7,21 +9,24 @@
     {
         public static void Main()
         {
-            var db = new WeaponsFactoryDbContext();
-            db.Database.Initialize(true);
+            var data = new WeaponsFactoryData();
 
-            var vendor = new Vendor()
+            var vendor = new Vendor { Name = "NewVendorName", Address = "NewVendorAddress" };
+            data.Vendors.Add(vendor);
+            data.Vendors.SaveChanges();
+
+            var manufacturer = new Manufacturer { Name = "TestManufacturer" };
+            data.Manufacturers.Add(manufacturer);
+            data.Manufacturers.SaveChanges();
+
+            foreach (var v in data.Vendors.All())
             {
-                Name = "TestVendorName",
-                Address = "TestVendorAddress"
-            };
+                Console.WriteLine(v.Name + " - " + v.Address);
+            }
 
-            db.Vendors.Add(vendor);
-            db.SaveChanges();
-
-            foreach (var v in db.Vendors)
+            foreach (var m in data.Manufacturers.All())
             {
-                System.Console.WriteLine(v.Name + " - " + v.Address);
+                Console.WriteLine(m.Name);
             }
         }
     }
