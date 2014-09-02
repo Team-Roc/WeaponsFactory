@@ -1,12 +1,14 @@
 ﻿namespace ExcelOperationsModule
 {
     using System.Data;
+    using System.Data.SQLite;
+    using System.Configuration;
     using System.IO;
 
     using OfficeOpenXml;
     using OfficeOpenXml.Table;
 
-    public static class ZipCreator
+    public static class ExcelFileCreator
     {
 #warning Add connection strings for MySQL and SQLite
 
@@ -20,7 +22,9 @@
 
         private static DataTable GetSqliteData()
         {
-            throw new System.NotImplementedException();
+            string connStr = ConfigurationManager.ConnectionStrings["SQLite"].ConnectionString;
+            var conn = new SQLiteConnection(connStr);
+            return new DataTable();
         }
 
         private static DataTable GetMySqlData()
@@ -28,7 +32,7 @@
             throw new System.NotImplementedException();
         }
 
-        private void CreateExcelReport(DataTable dataTable, string sheetName, string fileName)
+        private static void CreateExcelReport(DataTable dataTable, string sheetName, string fileName)
         {
             var excelFile = File.Create(fileName);
             

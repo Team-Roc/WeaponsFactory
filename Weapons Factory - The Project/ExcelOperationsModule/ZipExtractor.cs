@@ -2,21 +2,23 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Configuration;
     using System.Data;
     using System.Data.OleDb;
+    using System.Globalization;
     using System.IO;
     using System.IO.Compression;
     using System.Linq;
     using System.Text.RegularExpressions;
-    using System.Globalization;
 
     using WeaponsFactory.Models;
 
     public static class ZipExtractor
     {
         //var exlcs = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0};Extended Properties=\"Excel 8.0;HDR=Yes;IMEX=1\"";
-        private const string oledbConnStr = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source = {0}; Extended Properties=\"Excel 12.0;HDR=YES\"";
-
+        //private const string oledbConnStr = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source = {0}; Extended Properties=\"Excel 12.0;HDR=YES\"";
+        private static string oledbConnStr = ConfigurationManager.ConnectionStrings["OleDB"].ConnectionString;
+        
         public static IEnumerable<Sale> ReadZippedReports(string zipPath, string tmpFolderPath = "none")
         {
             if (tmpFolderPath == "none")
@@ -24,7 +26,7 @@
                 tmpFolderPath = Path.GetTempPath() + @"dbproject";
             }
 
-            var extractedFilepaths = ExtractContents(zipPath, tmpFolderPath);
+            var extractedFilepaths = ExtractZipContents(zipPath, tmpFolderPath);
             var importedSales = new List<Sale>();
 
             foreach (var filepath in extractedFilepaths)
@@ -71,7 +73,7 @@
             return newSale;
         }
 
-        private static IEnumerable<string> ExtractContents(string zipPath, string tmpFolderPath)
+        private static IEnumerable<string> ExtractZipContents(string zipPath, string tmpFolderPath)
         {
             var extractedFilesPaths = new List<string>();
 
