@@ -23,12 +23,6 @@
             {
                 Console.WriteLine(v.Name + " - " + v.Address);
             }
-
-            foreach (var m in data.Manufacturers.All())
-            foreach (var v in db.Vendors)
-            {
-                Console.WriteLine(v.Name + " - " + v.Address);
-            }
         }
     }
 }
