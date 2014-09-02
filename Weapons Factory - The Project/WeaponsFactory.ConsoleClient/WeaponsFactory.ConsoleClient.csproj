@@ -58,6 +58,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ExcelOperationsModule\ExcelOperationsModule.csproj">
+      <Project>{6a1da147-0dae-40e3-b412-95ce83f4b3b0}</Project>
+      <Name>ExcelOperationsModule</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WeaponsFactory.Data\WeaponsFactory.Data.csproj">
       <Project>{74c7ce91-bd2a-444f-8cca-04ded1472bfa}</Project>
       <Name>WeaponsFactory.Data</Name>

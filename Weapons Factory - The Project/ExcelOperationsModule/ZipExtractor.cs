@@ -8,6 +8,8 @@
     using System.IO.Compression;
     using System.Linq;
     using System.Text.RegularExpressions;
+    using System.Globalization;
+
     using WeaponsFactory.Models;
 
     public static class ZipExtractor
@@ -36,6 +38,11 @@
             //var content = ReadExcelFile(path);
             //var sale = GetSaleObjByData(content, path);
 
+            if (Directory.Exists(tmpFolderPath))
+            {
+                Directory.Delete(tmpFolderPath, true);
+            }
+
             return importedSales;
         }
 
@@ -44,12 +51,12 @@
             var dateStr = Regex.Match(filePath, @"\d{2}-\w{3}-\d{4}", RegexOptions.IgnoreCase).Value;
             var vendorIdStr = Regex.Match(filePath, @"-id(\d+)-", RegexOptions.IgnoreCase).Value;
             vendorIdStr = Regex.Match(vendorIdStr, @"\d+").Value;
-            var date = DateTime.Parse(dateStr);
+            var date = DateTime.Parse(dateStr, CultureInfo.InvariantCulture);
             Sale newSale = new Sale();
-            
+
             foreach (DataRow row in fileContents.Rows)
             {
-                var rowData = row.ItemArray;
+                var rowData = row.ItemArray.Where(e => e != DBNull.Value);
 
                 foreach (var entry in rowData)
                 {
@@ -57,7 +64,7 @@
                     newSale.Quantity = (int)((double)row["Quantity"]);
                     newSale.UnitPrice = (decimal)((double)row["Unit Price"]);
                     newSale.VendorId = int.Parse(vendorIdStr);
-                    newSale.WeaponId = (int)((double)row["ProductID"]);
+                    newSale.WeaponId = (int)((double)row["WeaponID"]);
                 }
             }
 
