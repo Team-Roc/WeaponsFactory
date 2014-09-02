@@ -23,7 +23,7 @@ namespace WeaponsFactory.DataAccess
 {
 	public partial class WeaponsFactoryModel : OpenAccessContext, IWeaponsFactoryModelUnitOfWork
 	{
-		private static string connectionStringName = @"";
+        private static string connectionStringName = @"WeaponsFactoryMySql";
 			
 		private static BackendConfiguration backend = GetBackendConfiguration();
 				
@@ -48,6 +48,14 @@ namespace WeaponsFactory.DataAccess
 		public WeaponsFactoryModel(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource)
 			:base(connection, backendConfiguration, metadataSource)
 		{ }
+
+        public IQueryable<Sale> Reports
+        {
+            get
+            {
+                return this.GetAll<Sale>();
+            }
+        }
 			
 		public static BackendConfiguration GetBackendConfiguration()
 		{
@@ -59,12 +67,40 @@ namespace WeaponsFactory.DataAccess
 		
 			return backend;
 		}
+
+        public static void UpdateDatabase ()
+        {
+            using (var context = new WeaponsFactoryModel())
+            {
+                var schemaHandler = context.GetSchemaHandler();
+                EnsureDB(schemaHandler);
+            }
+        }
 		
 		/// <summary>
 		/// Allows you to customize the BackendConfiguration of WeaponsFactoryModel.
 		/// </summary>
 		/// <param name="config">The BackendConfiguration of WeaponsFactoryModel.</param>
 		static partial void CustomizeBackendConfiguration(ref BackendConfiguration config);
+
+        private static void EnsureDB (ISchemaHandler schemaHandler)
+        {
+            string script = null;
+            if (schemaHandler.DatabaseExists())
+            {
+                script = schemaHandler.CreateUpdateDDLScript(null);
+            }
+            else
+            {
+                schemaHandler.CreateDatabase();
+                script = schemaHandler.CreateDDLScript();
+            }
+
+            if (!string.IsNullOrEmpty(script))
+            {
+                schemaHandler.ExecuteDDLScript(script);
+            }
+        }
 		
 	}
 	

@@ -4,6 +4,7 @@
 
     using WeaponsFactory.Data;
     using WeaponsFactory.Models;
+    using WeaponsFactory.DataAccess;
 
     public class WeaponsFactoryConsoleClient
     {
@@ -11,20 +12,14 @@
         {
             var data = new WeaponsFactoryData();
 
-            var vendor = new Vendor { Name = "NewVendorName", Address = "NewVendorAddress" };
-            data.Vendors.Add(vendor);
-            data.Vendors.SaveChanges();
-
-            var manufacturer = new Manufacturer { Name = "TestManufacturer" };
-            data.Manufacturers.Add(manufacturer);
-            data.Manufacturers.SaveChanges();
-
             foreach (var v in data.Vendors.All())
             {
                 Console.WriteLine(v.Name + " - " + v.Address);
             }
 
             data.GenerateJsonReports();
+
+            WeaponsFactoryModel.UpdateDatabase();
         }
     }
 }
