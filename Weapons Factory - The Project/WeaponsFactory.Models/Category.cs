@@ -19,7 +19,7 @@
 
         [Required]
         [MinLength(2)]
-        [MaxLength(20)]
+        [MaxLength(30)]
         public string Name { get; set; }
 
         public virtual ICollection<Weapon> Weapons

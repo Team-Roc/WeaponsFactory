@@ -19,11 +19,10 @@
 
         [Required]
         [MinLength(2)]
-        [MaxLength(20)]
+        [MaxLength(50)]
         public string Name { get; set; }
 
         [MinLength(10)]
-        [MaxLength(100)]
         public string Description { get; set; }
 
         [ForeignKey("Category")]

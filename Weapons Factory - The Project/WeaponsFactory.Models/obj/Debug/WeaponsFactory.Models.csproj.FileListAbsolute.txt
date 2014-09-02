@@ -1,0 +1,10 @@
+D:\My Stuff\Telerik Academy\09. Databases\Teamwork\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\WeaponsFactory.Models.dll.config
+D:\My Stuff\Telerik Academy\09. Databases\Teamwork\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\WeaponsFactory.Models.dll
+D:\My Stuff\Telerik Academy\09. Databases\Teamwork\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\WeaponsFactory.Models.pdb
+D:\My Stuff\Telerik Academy\09. Databases\Teamwork\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\EntityFramework.dll
+D:\My Stuff\Telerik Academy\09. Databases\Teamwork\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\My Stuff\Telerik Academy\09. Databases\Teamwork\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\EntityFramework.xml
+D:\My Stuff\Telerik Academy\09. Databases\Teamwork\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\My Stuff\Telerik Academy\09. Databases\Teamwork\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\obj\Debug\WeaponsFactory.Models.csprojResolveAssemblyReference.cache
+D:\My Stuff\Telerik Academy\09. Databases\Teamwork\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\obj\Debug\WeaponsFactory.Models.dll
+D:\My Stuff\Telerik Academy\09. Databases\Teamwork\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\obj\Debug\WeaponsFactory.Models.pdb
