@@ -31,6 +31,10 @@
                 //data.Manufacturers.Add(manufacturer);
                 //data.Manufacturers.SaveChanges();
 
+                //WeaponsFactory.Models.Sale sale = new WeaponsFactory.Models.Sale{ Quantity = 5, UnitPrice = 17, VendorId = 1, WeaponId = 3, Date = DateTime.Now }
+                //data.Manufacturers.Add(manufacturer);
+                //data.Manufacturers.SaveChanges();
+
                 // this is how you delete (facepalm)
                 //data.Vendors.Delete(data.Vendors.All().Where(v => v.Name == "NewVendorName").FirstOrDefault());
                 //data.Vendors.SaveChanges();
@@ -59,7 +63,7 @@
             //    Console.WriteLine("date: {0}, Quantity: {1}, SaleId {2}, UnitePrice: {3}, Vendor: {4}, VendorID: {5}, Weapon: {6}, WeaponID {7}", sale.Date, sale.Quantity, sale.SaleId, sale.UnitPrice, sale.Vendor, sale.VendorId, sale.Weapon, sale.WeaponId);
             //}
 
-            GeneratePDFReport();
+            //GeneratePDFReport();
         }
 
         private static void GeneratePDFReport()

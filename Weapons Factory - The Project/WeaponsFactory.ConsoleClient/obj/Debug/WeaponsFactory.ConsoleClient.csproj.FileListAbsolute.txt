@@ -1,2 +1,0 @@
-C:\Users\Mityu\Desktop\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.ConsoleClient\bin\Debug\WeaponsFactory.ConsoleClient.exe.config
-C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.ConsoleClient\bin\Debug\WeaponsFactory.ConsoleClient.exe.config
