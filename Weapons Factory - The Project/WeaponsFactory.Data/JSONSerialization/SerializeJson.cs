@@ -6,7 +6,7 @@
 
     public class SerializeJson
     {
-        public static void SerializeWeapons (IWeaponsFactoryDbContext context)
+        public static void SerializeWeapons(IWeaponsFactoryDbContext context)
         {
             var productsReports =
                 from weapon in context.Weapons
@@ -19,6 +19,15 @@
                     Quantity = context.Sales.Where(s => s.WeaponId == weapon.WeaponId).Sum(s => s.Quantity),
                     Income = sale.Quantity * sale.UnitPrice
                 };
+
+            //var productsReports = context.Weapons.Join(context.Sales, w => w.WeaponId, s => s.WeaponId, (w, s) => new
+            //    {
+            //        WeaponId = w.WeaponId,
+            //        WeaponName = w.Name,
+            //        ManufacturerName = w.Manufacturer.Name,
+            //        Quantity = s.Quantity,
+            //        Income = s.Quantity * s.UnitPrice
+            //    });
 
             JsonSerializer serializer = new JsonSerializer();
 

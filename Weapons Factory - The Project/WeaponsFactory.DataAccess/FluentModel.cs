@@ -7,53 +7,46 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
 using System.Data;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Data.Common;
 using System.Collections.Generic;
 using Telerik.OpenAccess;
 using Telerik.OpenAccess.Metadata;
-using Telerik.OpenAccess.Data.Common;
-using Telerik.OpenAccess.Metadata.Fluent;
-using Telerik.OpenAccess.Metadata.Fluent.Advanced;
 
-using WeaponsFactory.Data.JSONSerialization;
 using Newtonsoft.Json;
 using System.IO;
 
-namespace WeaponsFactory.DataAccess	
+namespace WeaponsFactory.DataAccess
 {
-	public partial class WeaponsFactoryModel : OpenAccessContext, IWeaponsFactoryModelUnitOfWork
-	{
+    public partial class WeaponsFactoryModel : OpenAccessContext, IWeaponsFactoryModelUnitOfWork
+    {
         private static string connectionStringName = @"WeaponsFactoryMySql";
-			
-		private static BackendConfiguration backend = GetBackendConfiguration();
-				
-		private static MetadataSource metadataSource = new WeaponsFactoryModelMetadataSource();
-		
-		public WeaponsFactoryModel()
-			:base(connectionStringName, backend, metadataSource)
-		{
+
+        private static BackendConfiguration backend = GetBackendConfiguration();
+
+        private static MetadataSource metadataSource = new WeaponsFactoryModelMetadataSource();
+
+        public WeaponsFactoryModel()
+            : base(connectionStringName, backend, metadataSource)
+        {
             this.UpdateDatabase();
         }
-		
-		public WeaponsFactoryModel(string connection)
-			:base(connection, backend, metadataSource)
-		{ }
-		
-		public WeaponsFactoryModel(BackendConfiguration backendConfiguration)
-			:base(connectionStringName, backendConfiguration, metadataSource)
-		{ }
-			
-		public WeaponsFactoryModel(string connection, MetadataSource metadataSource)
-			:base(connection, backend, metadataSource)
-		{ }
-		
-		public WeaponsFactoryModel(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource)
-			:base(connection, backendConfiguration, metadataSource)
-		{ }
+
+        public WeaponsFactoryModel(string connection)
+            : base(connection, backend, metadataSource)
+        { }
+
+        public WeaponsFactoryModel(BackendConfiguration backendConfiguration)
+            : base(connectionStringName, backendConfiguration, metadataSource)
+        { }
+
+        public WeaponsFactoryModel(string connection, MetadataSource metadataSource)
+            : base(connection, backend, metadataSource)
+        { }
+
+        public WeaponsFactoryModel(string connection, BackendConfiguration backendConfiguration, MetadataSource metadataSource)
+            : base(connection, backendConfiguration, metadataSource)
+        { }
 
         public IQueryable<ProductReport> Reports
         {
@@ -62,25 +55,25 @@ namespace WeaponsFactory.DataAccess
                 return this.GetAll<ProductReport>();
             }
         }
-			
-		public static BackendConfiguration GetBackendConfiguration()
-		{
-			BackendConfiguration backend = new BackendConfiguration();
-			backend.Backend = "MySql";
-			backend.ProviderName = "MySql.Data.MySqlClient";
-		
-			CustomizeBackendConfiguration(ref backend);
-		
-			return backend;
-		}
 
-        private void UpdateDatabase ()
+        public static BackendConfiguration GetBackendConfiguration()
+        {
+            BackendConfiguration backend = new BackendConfiguration();
+            backend.Backend = "MySql";
+            backend.ProviderName = "MySql.Data.MySqlClient";
+
+            CustomizeBackendConfiguration(ref backend);
+
+            return backend;
+        }
+
+        private void UpdateDatabase()
         {
             var schemaHandler = this.GetSchemaHandler();
             EnsureDB(schemaHandler);
         }
 
-        public void DeserializeWeapons ()
+        public void DeserializeWeapons()
         {
             JsonSerializer serializer = new JsonSerializer();
             var sales = new List<ProductReport>();
@@ -110,7 +103,7 @@ namespace WeaponsFactory.DataAccess
             this.SaveChanges();
         }
 
-        public DataTable GetReportsTable ()
+        public DataTable GetReportsTable()
         {
             var reportsTable = new DataTable();
 
@@ -127,14 +120,14 @@ namespace WeaponsFactory.DataAccess
 
             return reportsTable;
         }
-		
-		/// <summary>
-		/// Allows you to customize the BackendConfiguration of WeaponsFactoryModel.
-		/// </summary>
-		/// <param name="config">The BackendConfiguration of WeaponsFactoryModel.</param>
-		static partial void CustomizeBackendConfiguration(ref BackendConfiguration config);
 
-        private static void EnsureDB (ISchemaHandler schemaHandler)
+        /// <summary>
+        /// Allows you to customize the BackendConfiguration of WeaponsFactoryModel.
+        /// </summary>
+        /// <param name="config">The BackendConfiguration of WeaponsFactoryModel.</param>
+        static partial void CustomizeBackendConfiguration(ref BackendConfiguration config);
+
+        private static void EnsureDB(ISchemaHandler schemaHandler)
         {
             string script = null;
             if (schemaHandler.DatabaseExists())
@@ -152,11 +145,10 @@ namespace WeaponsFactory.DataAccess
                 schemaHandler.ExecuteDDLScript(script);
             }
         }
-		
-	}
-	
-	public interface IWeaponsFactoryModelUnitOfWork : IUnitOfWork
-	{
-	}
+    }
+
+    public interface IWeaponsFactoryModelUnitOfWork : IUnitOfWork
+    {
+    }
 }
 #pragma warning restore 1591

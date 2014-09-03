@@ -21,9 +21,9 @@
             this.weaponsFactoryData = weaponsFactoryData;
         }
 
-        public void ExportSalesEntriesToPdf(string pathToSave, string pdfReportName, DateTime startDate, DateTime endDate)
+        public void ExportSalesEntriesToPdf(string pdfReportFilePath, DateTime startDate, DateTime endDate)
         {
-            Document doc = this.InitializePdfDocument(pathToSave + pdfReportName);
+            Document doc = this.InitializePdfDocument(pdfReportFilePath);
             using (doc)
             {
                 doc.Open();
@@ -47,7 +47,7 @@
             var salesReportEntries = from s in this.weaponsFactoryData.Sales.All()
                                      join w in this.weaponsFactoryData.Weapons.All() on s.WeaponId equals w.WeaponId
                                      join ven in this.weaponsFactoryData.Vendors.All() on s.VendorId equals ven.VendorId
-                                
+
                                      select new PdfSaleReportEntry
                                      {
                                          Name = w.Name,
