@@ -25,12 +25,8 @@
             foreach (var sale in productsReports)
             {
                 var currentSaleFile = "../../../Reports/Json/" + sale.WeaponId + ".json";
-                if (File.Exists(currentSaleFile))
-                {
-                    continue;
-                }
 
-                using (var fileStream = new FileStream(currentSaleFile, FileMode.CreateNew))
+                using (var fileStream = new FileStream(currentSaleFile, FileMode.Create))
                 using (var streamWriter = new StreamWriter(fileStream))
                 using (var jsonWriter = new JsonTextWriter(streamWriter))
                 {
