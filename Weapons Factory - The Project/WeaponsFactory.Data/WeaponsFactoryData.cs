@@ -5,7 +5,7 @@
 
     using WeaponsFactory.Data.JSONSerialization;
     using WeaponsFactory.Data.Repositories;
-    using WeaponsFactory.Models;
+    using WeaponsFactory.Models.SqlModels;
 
     public class WeaponsFactoryData : IWeaponsFactoryData
     {

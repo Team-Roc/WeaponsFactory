@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Xml;
 
-    using WeaponsFactory.Models;
+    using WeaponsFactory.Models.SqlModels;
 
     public static class XMLParser
     {

@@ -3,7 +3,7 @@
     using System.Data.Entity;
 
     using WeaponsFactory.Data.Migrations;
-    using WeaponsFactory.Models;
+    using WeaponsFactory.Models.SqlModels;
 
     public class WeaponsFactoryDbContext : DbContext, IWeaponsFactoryDbContext
     {

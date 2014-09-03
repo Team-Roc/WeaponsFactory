@@ -2,9 +2,11 @@
 // Telerik Academy 2014
 // </copyright>
 
-namespace WeaponsFactory.MongoDb
+namespace WeaponsFactory.Data
 {
     using System;
+    using System.Collections;
+    using System.Collections.Generic;
     using System.Linq;
 
     using MongoDB.Bson;
@@ -13,10 +15,8 @@ namespace WeaponsFactory.MongoDb
     using MongoDB.Driver.Builders;
 
     using WeaponsFactory.Data;
-    using WeaponsFactory.Models;
-    using WeaponsFactory.MongoDb.Models;
-    using System.Collections;
-    using System.Collections.Generic;
+    using WeaponsFactory.Models.SqlModels;
+    using WeaponsFactory.Models.MongoModels;
 
     /// <summary>
     /// Represents the data of WeaponsFactory Mongo database
@@ -26,13 +26,13 @@ namespace WeaponsFactory.MongoDb
         private MongoClient mongoClient;
         private MongoServer server;
         private MongoDatabase mongoDb;
-        private WeaponsFactoryData sqlData;
+        private IWeaponsFactoryData sqlData;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="WeaponsFactoryMongoData" /> class.
         /// </summary>
         /// <param name="sqlData">SQL WeaponsFactory database.</param>
-        public WeaponsFactoryMongoData(WeaponsFactoryData sqlData)
+        public WeaponsFactoryMongoData(IWeaponsFactoryData sqlData)
         {
             this.mongoClient = new MongoClient("mongodb://127.0.0.1");
             this.server = mongoClient.GetServer();

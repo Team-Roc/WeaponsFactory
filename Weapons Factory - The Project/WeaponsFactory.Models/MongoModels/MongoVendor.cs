@@ -1,15 +1,17 @@
-﻿namespace WeaponsFactory.MongoDb.Models
+﻿namespace WeaponsFactory.Models.MongoModels
 {
     using MongoDB.Bson;
     using MongoDB.Bson.Serialization.Attributes;
 
-    public class MongoManufacturer
+    public class MongoVendor
     {
         [BsonRepresentation(BsonType.ObjectId)]
         public ObjectId Id { get; set; }
 
-        public int ManufacturerId { get; set; }
+        public int VendorId { get; set; }
 
         public string Name { get; set; }
+
+        public string Address { get; set; }
     }
 }

@@ -1,7 +1,7 @@
 ﻿namespace WeaponsFactory.Data
 {
     using WeaponsFactory.Data.Repositories;
-    using WeaponsFactory.Models;
+    using WeaponsFactory.Models.SqlModels;
 
     public interface IWeaponsFactoryData
     {
@@ -14,5 +14,7 @@
         IGenericRepository<Category> Categories { get; }
 
         IGenericRepository<Sale> Sales { get; }
+
+        void GenerateJsonReports();
     }
 }

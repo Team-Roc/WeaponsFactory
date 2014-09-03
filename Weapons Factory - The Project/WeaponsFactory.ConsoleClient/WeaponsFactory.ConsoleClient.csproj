@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="WeaponsFactoryConsoleClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeaponsFactoryModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -76,10 +77,6 @@
     <ProjectReference Include="..\WeaponsFactory.Models\WeaponsFactory.Models.csproj">
       <Project>{475a37e3-b81b-4dd9-ae82-a6b213b332ef}</Project>
       <Name>WeaponsFactory.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WeaponsFactory.MongoDb\WeaponsFactory.MongoDb.csproj">
-      <Project>{fa8a7967-9a54-4d50-96ad-8829f3f7615e}</Project>
-      <Name>WeaponsFactory.MongoDb</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
