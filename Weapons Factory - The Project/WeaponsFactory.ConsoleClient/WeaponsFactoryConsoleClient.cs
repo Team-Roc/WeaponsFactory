@@ -14,7 +14,7 @@
             WeaponsFactoryModule.LoadDataFromExcelInSqlDb();
             System.Console.WriteLine("Done!");
 
-            //WeaponsFactoryModule.GeneratePDFReport();
+            WeaponsFactoryModule.GeneratePDFReport();
 
             //WeaponsFactoryModule.GenerateXmlReport();
             System.Console.Write("SqlDb to Json... ");

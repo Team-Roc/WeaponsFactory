@@ -32,7 +32,7 @@
                 this.SetTableTitle(table, TableColumnsNumber, startDate, endDate);
                 this.SetTableColumnHeaders(table);
 
-                var salesReportEntries = this.GetSaleReportsFromDatabase(startDate, endDate);
+                var salesReportEntries = this.GetSaleReportsFromDatabase();
                 this.FillPdfTableBody(salesReportEntries, table);
 
                 decimal totalSum = salesReportEntries.Sum(x => x.Sum);
@@ -42,7 +42,7 @@
             }
         }
 
-        private IQueryable<PdfSaleReportEntry> GetSaleReportsFromDatabase(DateTime startDate, DateTime endDate)
+        private IQueryable<PdfSaleReportEntry> GetSaleReportsFromDatabase()
         {
             var salesReportEntries = from s in this.weaponsFactoryData.Sales.All()
                                      join w in this.weaponsFactoryData.Weapons.All() on s.WeaponId equals w.WeaponId
