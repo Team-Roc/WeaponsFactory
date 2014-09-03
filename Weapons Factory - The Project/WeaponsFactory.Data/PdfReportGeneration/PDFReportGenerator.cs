@@ -47,15 +47,15 @@
             var salesReportEntries = from s in this.weaponsFactoryData.Sales.All()
                                      join w in this.weaponsFactoryData.Weapons.All() on s.WeaponId equals w.WeaponId
                                      join ven in this.weaponsFactoryData.Vendors.All() on s.VendorId equals ven.VendorId
-                                
+
                                      select new PdfSaleReportEntry
                                      {
                                          Name = w.Name,
                                          Quantity = s.Quantity,
                                          UnitPrice = s.UnitPrice,
                                          Vendor = ven.Name,
-                                         Sum = s.Quantity * s.UnitPrice,
                                          Date = s.Date,
+                                         Sum = s.Quantity * s.UnitPrice,
                                      };
 
             return salesReportEntries;
@@ -69,8 +69,8 @@
                 this.AddTableCell(table, salesEntry.Quantity.ToString());
                 this.AddTableCell(table, salesEntry.UnitPrice.ToString());
                 this.AddTableCell(table, salesEntry.Vendor.ToString());
-                this.AddTableCell(table, salesEntry.Sum.ToString());
                 this.AddTableCell(table, salesEntry.Date.ToString(DateTimeFormat));
+                this.AddTableCell(table, salesEntry.Sum.ToString());
             }
         }
 
@@ -107,16 +107,10 @@
         private void SetTableFooter(PdfPTable table, decimal totalSum, int tableColumnsNumber)
         {
             var cell = new PdfPCell(new Phrase("Total sum: " + totalSum.ToString()));
-            cell.Colspan = tableColumnsNumber - 1;
+            cell.Colspan = tableColumnsNumber;
             cell.HorizontalAlignment = 2;
             cell.PaddingBottom = 5f;
-            cell.PaddingRight = 35f;
-            cell.BorderWidthRight = 0;
-            table.AddCell(cell);
-
-            cell = new PdfPCell();
-            cell.Colspan = 1;
-            cell.BorderWidthLeft = 0;
+            cell.PaddingRight = 25f;
             table.AddCell(cell);
         }
 
@@ -126,8 +120,8 @@
             this.AddTableCell(table, "Quantity");
             this.AddTableCell(table, "Unit Price");
             this.AddTableCell(table, "Vendor");
-            this.AddTableCell(table, "Sum");
             this.AddTableCell(table, "Date");
+            this.AddTableCell(table, "Sum");
         }
 
         private void AddTableCell(PdfPTable table, string phraseName)

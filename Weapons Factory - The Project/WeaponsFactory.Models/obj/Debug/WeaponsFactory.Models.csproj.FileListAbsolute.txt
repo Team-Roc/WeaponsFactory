@@ -1,0 +1,14 @@
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\WeaponsFactory.Models.dll.config
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\WeaponsFactory.Models.dll
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\WeaponsFactory.Models.pdb
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\EntityFramework.dll
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\EntityFramework.xml
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\obj\Debug\WeaponsFactory.Models.csprojResolveAssemblyReference.cache
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\obj\Debug\WeaponsFactory.Models.dll
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\obj\Debug\WeaponsFactory.Models.pdb
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\MongoDB.Bson.dll
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\MongoDB.Driver.dll
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\MongoDB.Bson.xml
+C:\Users\Tanya\Documents\Visual Studio 2013\Projects\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Models\bin\Debug\MongoDB.Driver.xml

@@ -9,7 +9,7 @@
 
     public class WeaponsFactoryModule
     {
-        public const string PdfReportfPath = "../../";
+        public const string PdfReportfPath = "../../../Reports/PDF";
         public const string PdfReportName = "/Report.pdf";
         public const string ZipReportsFilePath = "../../../InputData/WeaponsFactorySalesReports.zip";
 
