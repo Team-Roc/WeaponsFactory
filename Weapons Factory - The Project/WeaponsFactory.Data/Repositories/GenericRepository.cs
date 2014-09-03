@@ -1,6 +1,7 @@
 ﻿namespace WeaponsFactory.Data.Repositories
 {
     using System;
+    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Linq;
     using System.Linq.Expressions;
@@ -27,6 +28,14 @@
         public void Add(T entity)
         {
             this.ChangeState(entity, EntityState.Added);
+        }
+
+        public void AddRange(IEnumerable<T> entities)
+        {
+            foreach (var entity in entities)
+            {
+                this.Add(entity);
+            }
         }
 
         public void Update(T entity)
