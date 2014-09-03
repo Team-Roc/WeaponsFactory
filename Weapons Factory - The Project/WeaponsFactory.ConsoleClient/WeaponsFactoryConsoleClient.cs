@@ -22,11 +22,6 @@
         {
             //SQL
             var data = new WeaponsFactoryData();
-
-            
-
-
-
             //{
             //    //var vendor = new Vendor { Name = "NewVendorName", Address = "NewVendorAddress" };
             //    //data.Vendors.Add(vendor);
@@ -57,8 +52,8 @@
             //    //mongoData.Get();
             //}
 
-            //var dataAccess = new WeaponsFactoryModel();
-
+            var dataAccess = new WeaponsFactoryModel();
+            dataAccess.GetReportsTable();
             //data.GenerateJsonReports();
 
             //dataAccess.DeserializeWeapons();

@@ -106,6 +106,24 @@ namespace WeaponsFactory.DataAccess
             this.Add(sales.AsQueryable());
             this.SaveChanges();
         }
+
+        public DataTable GetReportsTable ()
+        {
+            var reportsTable = new DataTable();
+
+            reportsTable.Columns.Add("WeaponId", typeof(int));
+            reportsTable.Columns.Add("WeaponName", typeof(string));
+            reportsTable.Columns.Add("ManufacturerName", typeof(string));
+            reportsTable.Columns.Add("Quantity", typeof(int));
+            reportsTable.Columns.Add("Income", typeof(decimal));
+
+            foreach (var report in this.Reports)
+            {
+                reportsTable.Rows.Add(report.WeaponId, report.WeaponName, report.ManufacturerName, report.Quantity, report.Income);
+            }
+
+            return reportsTable;
+        }
 		
 		/// <summary>
 		/// Allows you to customize the BackendConfiguration of WeaponsFactoryModel.
