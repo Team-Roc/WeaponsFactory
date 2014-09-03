@@ -45,10 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\CategoryMongo.cs" />
-    <Compile Include="Models\ManufacturerMongo.cs" />
-    <Compile Include="Models\VendorMongo.cs" />
-    <Compile Include="Models\WeaponMongo.cs" />
+    <Compile Include="Models\MongoCategory.cs" />
+    <Compile Include="Models\MongoManufacturer.cs" />
+    <Compile Include="Models\MongoVendor.cs" />
+    <Compile Include="Models\MongoWeapon.cs" />
     <Compile Include="WeaponsFactoryMongoData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

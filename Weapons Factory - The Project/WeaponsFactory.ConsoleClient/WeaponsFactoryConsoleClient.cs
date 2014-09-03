@@ -45,12 +45,12 @@
             //    //}
             //}
 
-            ////MONGO
-            {
-                var mongoData = new WeaponsFactoryMongoData(data);
+            #region Mongo
+            var mongoData = new WeaponsFactoryMongoData(data);
 
                 mongoData.TransferDataToSqlDb();
-            }
+            #endregion
+
 
             //var dataAccess = new WeaponsFactoryModel();
             //dataAccess.GetReportsTable();
