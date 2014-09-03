@@ -16,7 +16,7 @@
                     WeaponId = weapon.WeaponId,
                     WeaponName = weapon.Name,
                     ManufacturerName = weapon.Manufacturer.Name,
-                    Quantity = sale.Quantity,
+                    Quantity = context.Sales.Where(s => s.WeaponId == weapon.WeaponId).Sum(s => s.Quantity),
                     Income = sale.Quantity * sale.UnitPrice
                 };
 

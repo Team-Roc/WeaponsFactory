@@ -96,10 +96,13 @@ namespace WeaponsFactory.DataAccess
                     var productReport = JsonConvert.DeserializeObject<ProductReport>(streamReader.ReadToEnd());
                     if (this.Reports.Any(p => p.WeaponId == productReport.WeaponId))
                     {
-                        continue;
+                        var report = this.Reports.Where(p => p.WeaponId == productReport.WeaponId).First();
+                        this.Delete(report);
+                        this.SaveChanges();
                     }
-
+                        
                     sales.Add(productReport);
+                    
                 }
             }
 
