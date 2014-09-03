@@ -17,8 +17,13 @@
             //WeaponsFactoryModule.GeneratePDFReport();
 
             //WeaponsFactoryModule.GenerateXmlReport();
-            //WeaponsFactoryModule.GenerateJsonReport();
-            //WeaponsFactoryModule.SaveJsonInMySqlDb();
+            System.Console.Write("SqlDb to Json... ");
+            WeaponsFactoryModule.GenerateJsonReport();
+            System.Console.WriteLine("Done!");
+
+            System.Console.Write("Json to MySql... ");
+            WeaponsFactoryModule.SaveJsonInMySqlDb();
+            System.Console.WriteLine("Done!");
             //WeaponsFactoryModule.LoadDataFromXmlInMongoDb();
             //WeaponsFactoryModule.GenerateExcelReportFromSQLiteAndMySqlDb();
         }
