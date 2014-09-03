@@ -16,10 +16,10 @@ namespace WeaponsFactory.Data.Migrations
 
         protected override void Seed(WeaponsFactoryDbContext context)
         {
-            this.SeedManufacturers(context);
-            this.SeedVendors(context);
-            this.SeedCategories(context);
-            this.SeedWeapons(context);
+            //this.SeedManufacturers(context);
+            //this.SeedVendors(context);
+            //this.SeedCategories(context);
+            //this.SeedWeapons(context);
         }
 
         private void SeedManufacturers (WeaponsFactoryDbContext context)
