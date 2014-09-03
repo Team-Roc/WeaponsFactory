@@ -14,10 +14,12 @@
         public const string ZipReportsFilePath = "../../../InputData/WeaponsFactorySalesReports.zip";
 
         private static IWeaponsFactoryData weaponsFactorySqlData;
+        private static WeaponsFactoryModel weaponsDataAccess;
 
         public WeaponsFactoryModule()
         {
             weaponsFactorySqlData = new WeaponsFactoryData();
+            weaponsDataAccess = new WeaponsFactoryModel();
         }
 
         /// <summary>
@@ -61,8 +63,6 @@
         /// </summary>
         public static void GenerateJsonReport()
         {
-            var dataAccess = new WeaponsFactoryModel();
-            dataAccess.GetReportsTable();
             weaponsFactorySqlData.GenerateJsonReports();
         }
 
@@ -71,7 +71,7 @@
         /// </summary>
         public static void SaveJsonInMySqlDb()
         {
-
+            weaponsDataAccess.DeserializeWeapons();
         }
 
         /// <summary>
