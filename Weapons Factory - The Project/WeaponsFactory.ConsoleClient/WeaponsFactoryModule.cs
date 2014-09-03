@@ -5,11 +5,13 @@
     using WeaponsFactory.Data;
     using WeaponsFactory.Data.PDFReportGeneration;
     using WeaponsFactory.DataAccess;
+    using WeaponsFactory.ExcelIO;
 
     public class WeaponsFactoryModule
     {
         public const string PdfReportfPath = "../../";
         public const string PdfReportName = "/Report.pdf";
+        public const string ZipReportsFilePath = "../../../InputData/WeaponsFactorySalesReports.zip";
 
         private static IWeaponsFactoryData weaponsFactorySqlData;
 
@@ -17,7 +19,7 @@
         {
             weaponsFactorySqlData = new WeaponsFactoryData();
         }
- 
+
         /// <summary>
         /// Move database schema from MongoDB to SQL Server.
         /// </summary>
@@ -32,7 +34,9 @@
         /// </summary>
         public static void LoadDataFromExcelInSqlDb()
         {
-
+            var importedExcel = ZipImporter.ImportZippedExcelReports(ZipReportsFilePath);
+            weaponsFactorySqlData.Sales.AddRange(importedExcel);
+            weaponsFactorySqlData.Sales.SaveChanges();
         }
 
         /// <summary>
