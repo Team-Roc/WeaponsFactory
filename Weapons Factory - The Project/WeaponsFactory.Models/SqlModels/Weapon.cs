@@ -1,4 +1,4 @@
-﻿namespace WeaponsFactory.Models
+﻿namespace WeaponsFactory.Models.SqlModels
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

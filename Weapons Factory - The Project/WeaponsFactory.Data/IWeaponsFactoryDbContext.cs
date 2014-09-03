@@ -3,7 +3,7 @@
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
 
-    using WeaponsFactory.Models;
+    using WeaponsFactory.Models.SqlModels;
 
     public interface IWeaponsFactoryDbContext
     {

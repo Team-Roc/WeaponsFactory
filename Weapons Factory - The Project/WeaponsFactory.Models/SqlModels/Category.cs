@@ -1,25 +1,25 @@
-﻿namespace WeaponsFactory.Models
+﻿namespace WeaponsFactory.Models.SqlModels
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
 
-    public class Manufacturer
+    public class Category
     {
         private ICollection<Weapon> weapons;
 
-        public Manufacturer()
+        public Category()
         {
             this.weapons = new HashSet<Weapon>();
         }
 
         [Key]
         [Column("ID")]
-        public int ManufacturerId { get; set; }
+        public int CategoryId { get; set; }
 
         [Required]
         [MinLength(2)]
-        [MaxLength(50)]
+        [MaxLength(30)]
         public string Name { get; set; }
 
         public virtual ICollection<Weapon> Weapons

@@ -11,7 +11,7 @@
     using System.Linq;
     using System.Text.RegularExpressions;
 
-    using WeaponsFactory.Models;
+    using WeaponsFactory.Models.SqlModels;
 
     public static class ZipImporter
     {

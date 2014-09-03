@@ -1,7 +1,7 @@
 ﻿namespace WeaponsFactory.Data
 {
     using WeaponsFactory.Data.Repositories;
-    using WeaponsFactory.Models;
+    using WeaponsFactory.Models.SqlModels;
 
     public interface IWeaponsFactoryData
     {

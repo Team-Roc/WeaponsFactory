@@ -1,4 +1,4 @@
-﻿namespace WeaponsFactory.MongoDb.Models
+﻿namespace WeaponsFactory.Models.MongoModels
 {
     using MongoDB.Bson;
     using MongoDB.Bson.Serialization.Attributes;

@@ -77,10 +77,6 @@
       <Project>{475a37e3-b81b-4dd9-ae82-a6b213b332ef}</Project>
       <Name>WeaponsFactory.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WeaponsFactory.MongoDb\WeaponsFactory.MongoDb.csproj">
-      <Project>{fa8a7967-9a54-4d50-96ad-8829f3f7615e}</Project>
-      <Name>WeaponsFactory.MongoDb</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

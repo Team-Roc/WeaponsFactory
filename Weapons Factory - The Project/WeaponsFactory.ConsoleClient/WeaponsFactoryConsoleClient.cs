@@ -7,7 +7,6 @@
     using WeaponsFactory.Data;
     using WeaponsFactory.Models;
     using WeaponsFactory.DataAccess;
-    using WeaponsFactory.MongoDb;
     using WeaponsFactory.Data.PDFReportGeneration;
     using WeaponsFactory.ExcelIO;
 
@@ -20,6 +19,7 @@
 
         public static void Main()
         {
+            //Transfers the DB schema from MongoDB to SQL Server
             var data = new WeaponsFactoryData();
 
             var mongoData = new WeaponsFactoryMongoData(data);

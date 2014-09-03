@@ -41,6 +41,12 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\packages\mongocsharpdriver.1.9.2\lib\net35\MongoDB.Driver.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -51,18 +57,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Category.cs" />
-    <Compile Include="Manufacturer.cs" />
+    <Compile Include="MongoModels\MongoCategory.cs" />
+    <Compile Include="MongoModels\MongoManufacturer.cs" />
+    <Compile Include="MongoModels\MongoVendor.cs" />
+    <Compile Include="MongoModels\MongoWeapon.cs" />
+    <Compile Include="SqlModels\Category.cs" />
+    <Compile Include="SqlModels\Manufacturer.cs" />
     <Compile Include="PdfSaleReportEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sale.cs" />
-    <Compile Include="Vendor.cs" />
-    <Compile Include="Weapon.cs" />
+    <Compile Include="SqlModels\Sale.cs" />
+    <Compile Include="SqlModels\Vendor.cs" />
+    <Compile Include="SqlModels\Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
