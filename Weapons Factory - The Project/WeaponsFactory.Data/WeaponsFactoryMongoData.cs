@@ -26,13 +26,13 @@ namespace WeaponsFactory.Data
         private MongoClient mongoClient;
         private MongoServer server;
         private MongoDatabase mongoDb;
-        private WeaponsFactoryData sqlData;
+        private IWeaponsFactoryData sqlData;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="WeaponsFactoryMongoData" /> class.
         /// </summary>
         /// <param name="sqlData">SQL WeaponsFactory database.</param>
-        public WeaponsFactoryMongoData(WeaponsFactoryData sqlData)
+        public WeaponsFactoryMongoData(IWeaponsFactoryData sqlData)
         {
             this.mongoClient = new MongoClient("mongodb://127.0.0.1");
             this.server = mongoClient.GetServer();

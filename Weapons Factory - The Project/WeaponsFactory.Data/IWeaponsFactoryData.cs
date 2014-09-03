@@ -14,5 +14,7 @@
         IGenericRepository<Category> Categories { get; }
 
         IGenericRepository<Sale> Sales { get; }
+
+        void GenerateJsonReports();
     }
 }
