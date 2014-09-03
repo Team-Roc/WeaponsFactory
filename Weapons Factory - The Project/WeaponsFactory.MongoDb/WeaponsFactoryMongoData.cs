@@ -11,59 +11,138 @@
     using WeaponsFactory.Data;
     using WeaponsFactory.Models;
     using WeaponsFactory.MongoDb.Models;
+    using System.Collections;
+    using System.Collections.Generic;
 
     public class WeaponsFactoryMongoData
     {
-        private WeaponsFactoryData data;
+        private MongoClient mongoClient;
+        private MongoServer server;
+        private MongoDatabase mongoDb;
+        private WeaponsFactoryData sqlData;
 
         public WeaponsFactoryMongoData(WeaponsFactoryData sqlData)
         {
-            this.data = sqlData;
+            this.mongoClient = new MongoClient("mongodb://127.0.0.1");
+            this.server = mongoClient.GetServer();
+            this.mongoDb = server.GetDatabase("WeaponsFactory");
+            this.sqlData = sqlData;
         }
 
-        public void Get()
+        public void TransferDataToSqlDb()
         {
-            var mongoClient = new MongoClient("mongodb://127.0.0.1");
-            var server = mongoClient.GetServer();
-            MongoDatabase mongoDb = server.GetDatabase("WeaponsFactory");
+            var vendors = this.GetVendors();
+            this.sqlData.Vendors.AddRange(vendors);
+            this.sqlData.Vendors.SaveChanges();
 
-            //vendors.Insert(new ManufacturerMongo()
-            //{
-            //    Id = ObjectId.GenerateNewId().ToString(),
-            //    ManufacturerId = 1,
-            //    Name = "Benelli"
-            //});
+            var manufacturers = this.GetManufacturers();
+            this.sqlData.Manufacturers.AddRange(manufacturers);
+            this.sqlData.Manufacturers.SaveChanges();
 
-            var vendors = mongoDb.GetCollection<VendorMongo>("Vendors");
-            var manufacturers = mongoDb.GetCollection<ManufacturerMongo>("Manufacturers");
-            var weapons = mongoDb.GetCollection<WeaponMongo>("Weapons");
-            var categories = mongoDb.GetCollection<CategoryMongo>("Categories");
+            var categories = this.GetCategories();
+            this.sqlData.Categories.AddRange(categories);
+            this.sqlData.Categories.SaveChanges();
 
-            foreach (var vendor in vendors.FindAll())
+            var weapons = this.GetWeapons();
+            this.sqlData.Weapons.AddRange(weapons);
+            this.sqlData.Weapons.SaveChanges();
+        }
+
+        private IEnumerable<Vendor> GetVendors()
+        {
+            var mongoVendors = this.mongoDb.GetCollection<MongoVendor>("Vendors");
+            var vendors = new List<Vendor>();
+
+            foreach (var mongoVendor in mongoVendors.FindAll())
             {
-                var entryExists = this.data.Vendors.All().Any(a => a.VendorId == vendor.VendorId);
+                var entryExists = this.sqlData.Vendors.All().Any(a => a.Name == mongoVendor.Name);
                 if (!entryExists)
                 {
-                    var newVendor = new Vendor { Name = vendor.Name, Address = vendor.Address };
-                    this.data.Vendors.Add(newVendor);
-                    this.data.Vendors.SaveChanges();
+                    var newSqlVendor = new Vendor
+                    {
+                        Name = mongoVendor.Name,
+                        Address = mongoVendor.Address
+                    };
+
+                    vendors.Add(newSqlVendor);
                 }
             }
 
-            foreach (var manufacturer in manufacturers.FindAll())
+            return vendors;
+        }
+
+        private IEnumerable<Manufacturer> GetManufacturers()
+        {
+            var mongoManufacturers = this.mongoDb.GetCollection<MongoManufacturer>("Manufacturers");
+            var manufacturers = new List<Manufacturer>();
+
+            foreach (var mongoManufacturer in mongoManufacturers.FindAll())
             {
-                Console.WriteLine(manufacturer.ManufacturerId + " " + manufacturer.Name);
+                var entryExists = this.sqlData.Manufacturers.All().Any(a => a.Name == mongoManufacturer.Name);
+                if (!entryExists)
+                {
+                    var newSqlManufacturer = new Manufacturer
+                    {
+                        Name = mongoManufacturer.Name
+                    };
+
+                    manufacturers.Add(newSqlManufacturer);
+                }
             }
 
-            foreach (var weapon in weapons.FindAll())
+            return manufacturers;
+        }
+
+        private IEnumerable<Category> GetCategories()
+        {
+            var mongoCategories = this.mongoDb.GetCollection<MongoCategory>("Categories");
+            var categories = new List<Category>();
+            foreach (var mongoCategory in mongoCategories.FindAll())
             {
-                Console.WriteLine(weapon.WeaponId + " " + weapon.Name + " " + weapon.Description + " " + weapon.CategoryId + " " + weapon.ManufacturerId);
+                var entryExists = this.sqlData.Categories.All().Any(a => a.Name == mongoCategory.Name);
+                if (!entryExists)
+                {
+                    var newSqlCategory = new Category
+                    {
+                        Name = mongoCategory.Name
+                    };
+
+                    categories.Add(newSqlCategory);
+                }
             }
 
-            foreach (var category in categories.FindAll())
+            return categories;
+        }
+
+        private IEnumerable<Weapon> GetWeapons()
+        {
+            var mongoWeapons = this.mongoDb.GetCollection<MongoWeapon>("Weapons");
+            var weapons = new List<Weapon>();
+
+            foreach (var mongoWeapon in mongoWeapons.FindAll())
             {
-                Console.WriteLine(category.CategoryId + " " + category.Name);
+                var entryExists = this.sqlData.Weapons.All().Any(a => a.Name == mongoWeapon.Name);
+                if (!entryExists)
+                {
+                    var newSqlWeapon = new Weapon
+                    {
+                        Name = mongoWeapon.Name,
+                        Description = mongoWeapon.Description,
+                        CategoryId = mongoWeapon.CategoryId,
+                        ManufacturerId = mongoWeapon.ManufacturerId
+                    };
+
+                    weapons.Add(newSqlWeapon);
+                }
             }
+
+            return weapons;
+        }
+
+        private void InsertEntity<T>(T entity, string collectionName)
+        {
+            var mongoEntities = this.mongoDb.GetCollection<T>(collectionName);
+            mongoEntities.Insert(entity);
         }
     }
 }

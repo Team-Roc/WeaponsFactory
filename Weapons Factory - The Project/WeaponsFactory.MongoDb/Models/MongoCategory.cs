@@ -3,15 +3,13 @@
     using MongoDB.Bson;
     using MongoDB.Bson.Serialization.Attributes;
 
-    public class VendorMongo
+    public class MongoCategory
     {
         [BsonRepresentation(BsonType.ObjectId)]
-        public ObjectId Id { get; set; }                //check string
+        public ObjectId Id { get; set; }
 
-        public int VendorId { get; set; }
+        public int CategoryId { get; set; }
 
         public string Name { get; set; }
-
-        public string Address { get; set; }
     }
 }
