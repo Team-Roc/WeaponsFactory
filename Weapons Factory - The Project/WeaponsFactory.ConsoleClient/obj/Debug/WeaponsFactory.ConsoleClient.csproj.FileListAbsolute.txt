@@ -1,1 +1,0 @@
-C:\Users\Mityu\Desktop\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.ConsoleClient\bin\Debug\WeaponsFactory.ConsoleClient.exe.config
