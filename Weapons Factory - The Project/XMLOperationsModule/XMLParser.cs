@@ -8,7 +8,7 @@
 
     public static class XMLParser
     {
-        public static IEnumerable<Sale> GetSales(string fullFilePath)
+        public static IEnumerable<Sale> GetSalesFromFile(string fullFilePath)
         {
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(fullFilePath);
@@ -16,7 +16,7 @@
             var xmlQueryString = "/sales/sale";
             XmlNodeList nodesList = xmlDoc.SelectNodes(xmlQueryString);
 
-            var sales = new List<Sale>();
+            var sales = new HashSet<Sale>();
 
             foreach (XmlNode node in nodesList)
             {

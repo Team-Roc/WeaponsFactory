@@ -41,8 +41,17 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XMLParser.cs" />
+    <Compile Include="XMLReportsGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WeaponsFactory.DataAccess\WeaponsFactory.DataAccess.csproj">
+      <Project>{6f9c2621-695c-4bde-881b-157dcaa75c07}</Project>
+      <Name>WeaponsFactory.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WeaponsFactory.Data\WeaponsFactory.Data.csproj">
+      <Project>{74c7ce91-bd2a-444f-8cca-04ded1472bfa}</Project>
+      <Name>WeaponsFactory.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WeaponsFactory.Models\WeaponsFactory.Models.csproj">
       <Project>{475a37e3-b81b-4dd9-ae82-a6b213b332ef}</Project>
       <Name>WeaponsFactory.Models</Name>
