@@ -85,7 +85,7 @@ namespace WeaponsFactory.DataAccess
             JsonSerializer serializer = new JsonSerializer();
             var sales = new List<ProductReport>();
 
-            var jsonFiles = Directory.GetFiles(@"../../../JsonReports");
+            var jsonFiles = Directory.GetFiles(@"../../../Reports/Json");
 
             foreach (var file in jsonFiles)
             {

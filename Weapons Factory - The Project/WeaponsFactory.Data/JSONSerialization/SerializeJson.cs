@@ -24,7 +24,7 @@
 
             foreach (var sale in productsReports)
             {
-                var currentSaleFile = "../../../JsonReports/" + sale.WeaponId + ".json";
+                var currentSaleFile = "../../../Reports/Json/" + sale.WeaponId + ".json";
                 if (File.Exists(currentSaleFile))
                 {
                     continue;
