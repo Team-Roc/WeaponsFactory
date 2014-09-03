@@ -20,37 +20,10 @@
 
         public static void Main()
         {
-            //SQL
             var data = new WeaponsFactoryData();
-            //{
-            //    //var vendor = new Vendor { Name = "NewVendorName", Address = "NewVendorAddress" };
-            //    //data.Vendors.Add(vendor);
-            //    //data.Vendors.SaveChanges();
 
-            //    //var manufacturer = new Manufacturer { Name = "TestManufacturer" };
-            //    //data.Manufacturers.Add(manufacturer);
-            //    //data.Manufacturers.SaveChanges();
-
-            //    //WeaponsFactory.Models.Sale sale = new WeaponsFactory.Models.Sale{ Quantity = 5, UnitPrice = 17, VendorId = 1, WeaponId = 3, Date = DateTime.Now }
-            //    //data.Manufacturers.Add(manufacturer);
-            //    //data.Manufacturers.SaveChanges();
-
-            //    // this is how you delete (facepalm)
-            //    //data.Vendors.Delete(data.Vendors.All().Where(v => v.Name == "NewVendorName").FirstOrDefault());
-            //    //data.Vendors.SaveChanges();
-
-            //    //foreach (var v in data.Vendors.All())
-            //    //{
-            //    //    Console.WriteLine(v.Name + " - " + v.Address);
-            //    //}
-            //}
-
-            #region Mongo
             var mongoData = new WeaponsFactoryMongoData(data);
-
-                mongoData.TransferDataToSqlDb();
-            #endregion
-
+            mongoData.TransferDataToSqlDb();
 
             //var dataAccess = new WeaponsFactoryModel();
             //dataAccess.GetReportsTable();
