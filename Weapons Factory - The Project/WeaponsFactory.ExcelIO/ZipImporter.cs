@@ -1,4 +1,4 @@
-﻿namespace ExcelOperationsModule
+﻿namespace WeaponsFactory.ExcelIO
 {
     using System;
     using System.Collections.Generic;
@@ -13,13 +13,11 @@
 
     using WeaponsFactory.Models;
 
-    public static class ZipExtractor
+    public static class ZipImporter
     {
-        //var exlcs = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source={0};Extended Properties=\"Excel 8.0;HDR=Yes;IMEX=1\"";
-        //private const string oledbConnStr = "Provider=Microsoft.ACE.OLEDB.12.0; Data Source = {0}; Extended Properties=\"Excel 12.0;HDR=YES\"";
         private static string oledbConnStr = ConfigurationManager.ConnectionStrings["OleDB"].ConnectionString;
-        
-        public static IEnumerable<Sale> ReadZippedReports(string zipPath, string tmpFolderPath = "none")
+
+        public static IEnumerable<Sale> ImportZippedExcelReports(string zipPath, string tmpFolderPath = "none")
         {
             if (tmpFolderPath == "none")
             {
@@ -31,14 +29,10 @@
 
             foreach (var filepath in extractedFilepaths)
             {
-                var fileContents = ReadExcelFile(filepath);
-                var newImportedSale = GetSaleObjByData(fileContents, filepath);
-                importedSales.Add(newImportedSale);
+                var fileContents = ZipImporter.ReadExcelFile(filepath);
+                var newImportedSale = ZipImporter.GetSaleObjByData(fileContents, filepath);
+                importedSales.AddRange(newImportedSale);
             }
-
-            //var path = @"C:\Users\Georgi\AppData\Local\Temp\dbproject\20-Jul-2013\Bourgas-Plaza-Sales-Report-id321-20-Jul-2013.xls";
-            //var content = ReadExcelFile(path);
-            //var sale = GetSaleObjByData(content, path);
 
             if (Directory.Exists(tmpFolderPath))
             {
@@ -48,29 +42,35 @@
             return importedSales;
         }
 
-        private static Sale GetSaleObjByData(DataTable fileContents, string filePath)
+        private static IEnumerable<Sale> GetSaleObjByData(DataTable fileContents, string filePath)
         {
             var dateStr = Regex.Match(filePath, @"\d{2}-\w{3}-\d{4}", RegexOptions.IgnoreCase).Value;
+
             var vendorIdStr = Regex.Match(filePath, @"-id(\d+)-", RegexOptions.IgnoreCase).Value;
             vendorIdStr = Regex.Match(vendorIdStr, @"\d+").Value;
+            var vendorId = int.Parse(vendorIdStr);
+
             var date = DateTime.Parse(dateStr, CultureInfo.InvariantCulture);
-            Sale newSale = new Sale();
+            var newSales = new List<Sale>();
 
             foreach (DataRow row in fileContents.Rows)
             {
-                var rowData = row.ItemArray.Where(e => e != DBNull.Value);
+                var rowContainsData = row.ItemArray
+                    .Any(i => i != DBNull.Value);
 
-                foreach (var entry in rowData)
+                if (rowContainsData)
                 {
+                    var newSale = new Sale();
                     newSale.Date = date;
                     newSale.Quantity = (int)((double)row["Quantity"]);
                     newSale.UnitPrice = (decimal)((double)row["Unit Price"]);
-                    newSale.VendorId = int.Parse(vendorIdStr);
+                    newSale.VendorId = vendorId;
                     newSale.WeaponId = (int)((double)row["WeaponID"]);
+                    newSales.Add(newSale);
                 }
             }
 
-            return newSale;
+            return newSales;
         }
 
         private static IEnumerable<string> ExtractZipContents(string zipPath, string tmpFolderPath)
@@ -109,7 +109,6 @@
 
         private static DataTable ReadExcelFile(string excelFilePath)
         {
-
             var connStr = string.Format(oledbConnStr, excelFilePath);
             var exelFileConn = new OleDbConnection(connStr);
 

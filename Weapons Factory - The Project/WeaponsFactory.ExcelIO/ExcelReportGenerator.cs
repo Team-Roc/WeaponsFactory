@@ -1,8 +1,6 @@
-﻿namespace ExcelOperationsModule
+﻿namespace WeaponsFactory.ExcelIO
 {
     using System.Data;
-    using System.Data.SQLite;
-    using System.Configuration;
     using System.IO;
 
     using OfficeOpenXml;
@@ -13,17 +11,19 @@
 #warning Add connection strings for MySQL and SQLite
 
         private const string ReportStartCell = "A1";
+        private const string SqliteFilePath = @"D:\TaxesByWeaponCategory.sqlite";
 
         public static void GenerateExcelReport()
         {
-            DataTable mySqlData = GetMySqlData();
             DataTable sqliteData = GetSqliteData();
+            //DataTable mySqlData = GetMySqlData();
         }
 
         private static DataTable GetSqliteData()
         {
-            string connStr = ConfigurationManager.ConnectionStrings["SQLite"].ConnectionString;
-            var conn = new SQLiteConnection(connStr);
+            
+
+
             return new DataTable();
         }
 
@@ -35,14 +35,14 @@
         private static void CreateExcelReport(DataTable dataTable, string sheetName, string fileName)
         {
             var excelFile = File.Create(fileName);
-            
+
             using (var excelPackage = new ExcelPackage(excelFile))
             {
                 // Add a new worksheet to the excel file
                 var worksheet = excelPackage.Workbook.Worksheets.Add(sheetName);
 
                 // Fill in data, beginning from the most top left cell
-                worksheet.Cells[ReportStartCell].LoadFromDataTable(dataTable, true, TableStyles.None);
+                worksheet.Cells[ExcelFileCreator.ReportStartCell].LoadFromDataTable(dataTable, true, TableStyles.None);
 
                 // Create the .xlsx file
                 excelPackage.Save();

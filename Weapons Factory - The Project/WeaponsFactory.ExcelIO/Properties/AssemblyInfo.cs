@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExcelOperationsModule")]
+[assembly: AssemblyTitle("WeaponsFactory.ExcelIO")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("ExcelOperationsModule")]
+[assembly: AssemblyProduct("WeaponsFactory.ExcelIO")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("7d7abefb-f174-49ea-afcc-d64a72128d51")]
+[assembly: Guid("c134ed00-f9db-47c7-8cbb-8c3b80a0f500")]
 
 // Version information for an assembly consists of the following four values:
 //
