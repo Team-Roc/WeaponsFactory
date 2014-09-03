@@ -1,0 +1,6 @@
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\XMLOperationsModule\bin\Debug\XMLOperationsModule.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\XMLOperationsModule\bin\Debug\XMLOperationsModule.pdb
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\XMLOperationsModule\bin\Debug\WeaponsFactory.Models.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\XMLOperationsModule\bin\Debug\WeaponsFactory.Models.pdb
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\XMLOperationsModule\obj\Debug\XMLOperationsModule.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\XMLOperationsModule\obj\Debug\XMLOperationsModule.pdb

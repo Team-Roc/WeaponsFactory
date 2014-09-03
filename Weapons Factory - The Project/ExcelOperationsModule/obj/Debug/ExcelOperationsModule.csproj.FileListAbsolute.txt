@@ -1,0 +1,3 @@
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\ExcelOperationsModule\obj\Debug\ExcelOperationsModule.csprojResolveAssemblyReference.cache
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\ExcelOperationsModule\obj\Debug\ExcelOperationsModule.Filepaths.resources
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\ExcelOperationsModule\obj\Debug\ExcelOperationsModule.csproj.GenerateResource.Cache

@@ -30,3 +30,7 @@ C:\DOCUMENTS\GitHub\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.
 C:\DOCUMENTS\GitHub\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.ConsoleClient\bin\Debug\WeaponsFactory.MongoDb.pdb
 C:\DOCUMENTS\GitHub\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.ConsoleClient\bin\Debug\MongoDB.Bson.xml
 C:\DOCUMENTS\GitHub\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.ConsoleClient\bin\Debug\MongoDB.Driver.xml
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.ConsoleClient\bin\Debug\WeaponsFactory.ConsoleClient.exe.config
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.ConsoleClient\obj\Debug\WeaponsFactory.ConsoleClient.exe
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.ConsoleClient\obj\Debug\WeaponsFactory.ConsoleClient.pdb
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.ConsoleClient\obj\Debug\WeaponsFactory.ConsoleClient.csprojResolveAssemblyReference.cache

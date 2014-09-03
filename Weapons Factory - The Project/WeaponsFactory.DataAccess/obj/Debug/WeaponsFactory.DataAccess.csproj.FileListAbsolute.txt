@@ -1,0 +1,1 @@
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.DataAccess\obj\Debug\WeaponsFactory.DataAccess.csprojResolveAssemblyReference.cache

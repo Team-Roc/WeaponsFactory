@@ -1,0 +1,17 @@
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\WeaponsFactory.MongoDb.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\WeaponsFactory.MongoDb.pdb
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\MongoDB.Bson.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\MongoDB.Driver.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\WeaponsFactory.Data.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\WeaponsFactory.Models.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\EntityFramework.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\WeaponsFactory.Data.pdb
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\WeaponsFactory.Models.pdb
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\MongoDB.Bson.xml
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\MongoDB.Driver.xml
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\EntityFramework.xml
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\obj\Debug\WeaponsFactory.MongoDb.csprojResolveAssemblyReference.cache
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\obj\Debug\WeaponsFactory.MongoDb.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.MongoDb\obj\Debug\WeaponsFactory.MongoDb.pdb

@@ -1,0 +1,14 @@
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\WeaponsFactory.Data.dll.config
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\WeaponsFactory.Data.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\WeaponsFactory.Data.pdb
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\EntityFramework.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\WeaponsFactory.Models.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\WeaponsFactory.Models.pdb
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\EntityFramework.xml
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\obj\Debug\WeaponsFactory.Data.csprojResolveAssemblyReference.cache
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\obj\Debug\WeaponsFactory.Data.dll
+C:\Users\Mityu\Desktop\PleaseWORK\WeaponsFactory\Weapons Factory - The Project\WeaponsFactory.Data\obj\Debug\WeaponsFactory.Data.pdb
