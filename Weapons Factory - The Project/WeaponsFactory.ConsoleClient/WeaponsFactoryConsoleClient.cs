@@ -1,31 +1,47 @@
 ﻿namespace WeaponsFactory.ConsoleClient
 {
+    using System;
+    using WeaponsFactory.Modules;
+
     public class WeaponsFactoryConsoleClient
     {
         public static void Main()
         {
-            var weaponsFactoryModule = new WeaponsFactoryModule();
+            Console.Write("Database initializing... ");
+            WeaponsFactoryModule.InitializeData();
+            Console.WriteLine("Done!");
 
-            System.Console.Write("MongoDb to SqlDb... ");
+            Console.Write("MongoDb to SqlDb... ");
             WeaponsFactoryModule.MoveMongoDbDataToSqlDb();
-            System.Console.WriteLine("Done!");
+            Console.WriteLine("Done!");
 
-            System.Console.Write("Excel to SqlDb... ");
+            Console.Write("Excel to SqlDb... ");
             WeaponsFactoryModule.LoadDataFromExcelInSqlDb();
-            System.Console.WriteLine("Done!");
+            Console.WriteLine("Done!");
 
+            Console.Write("SqlDb to PDF... ");
             WeaponsFactoryModule.GeneratePDFReport();
+            Console.WriteLine("Done!");
 
+            //Console.Write("SqlDb to Xml... ");
             //WeaponsFactoryModule.GenerateXmlReport();
-            System.Console.Write("SqlDb to Json... ");
-            WeaponsFactoryModule.GenerateJsonReport();
-            System.Console.WriteLine("Done!");
+            //Console.WriteLine("Done!");
 
-            System.Console.Write("Json to MySql... ");
+            Console.Write("SqlDb to Json... ");
+            WeaponsFactoryModule.GenerateJsonReport();
+            Console.WriteLine("Done!");
+
+            Console.Write("Json to MySql... ");
             WeaponsFactoryModule.SaveJsonInMySqlDb();
-            System.Console.WriteLine("Done!");
+            Console.WriteLine("Done!");
+
+            //Console.Write("Json to MySql... ");
             //WeaponsFactoryModule.LoadDataFromXmlInMongoDb();
+            //Console.WriteLine("Done!");
+
+            //Console.Write("Json to MySql... ");
             //WeaponsFactoryModule.GenerateExcelReportFromSQLiteAndMySqlDb();
+            //Console.WriteLine("Done!");
         }
     }
 }

@@ -1,4 +1,8 @@
-﻿namespace WeaponsFactory.ConsoleClient
+﻿// <copyright file="WeaponsFactoryModule.cs" company="Telerik">
+// Telerik Academy 2014
+// </copyright>
+
+namespace WeaponsFactory.Modules
 {
     using System;
 
@@ -7,16 +11,22 @@
     using WeaponsFactory.DataAccess;
     using WeaponsFactory.ExcelIO;
 
-    public class WeaponsFactoryModule
+    public static class WeaponsFactoryModule
     {
-        public const string PdfReportfPath = "../../../Reports/PDF";
-        public const string PdfReportName = "/Report.pdf";
-        public const string ZipReportsFilePath = "../../../InputData/WeaponsFactorySalesReports.zip";
+        private const string ZipReportFilePath = "../../../InputData/WeaponsFactorySalesReports.zip";
+        private const string PdfReportFilePath = "../../../Reports/PDF/Report.pdf";
+        private const string ExcelReportFilePath = "../../../Reports/Excel/Report.xlsx";
+
+        private static DateTime PdfReportStartDate = new DateTime(2000, 1, 1);
+        private static DateTime PdfReportEndDate = new DateTime(2014, 1, 1);
 
         private static IWeaponsFactoryData weaponsFactorySqlData;
         private static WeaponsFactoryModel weaponsDataAccess;
 
-        public WeaponsFactoryModule()
+        /// <summary>
+        /// Initialize the data from Mongo and MySql databases.
+        /// </summary>
+        public static void InitializeData()
         {
             weaponsFactorySqlData = new WeaponsFactoryData();
             weaponsDataAccess = new WeaponsFactoryModel();
@@ -36,7 +46,7 @@
         /// </summary>
         public static void LoadDataFromExcelInSqlDb()
         {
-            var importedExcel = ZipImporter.ImportZippedExcelReports(ZipReportsFilePath);
+            var importedExcel = ZipImporter.ImportZippedExcelReports(ZipReportFilePath);
             weaponsFactorySqlData.Sales.AddRange(importedExcel);
             weaponsFactorySqlData.Sales.SaveChanges();
         }
@@ -47,7 +57,7 @@
         public static void GeneratePDFReport()
         {
             var prdfReportGenerator = new PDFReportGenerator(weaponsFactorySqlData);
-            prdfReportGenerator.ExportSalesEntriesToPdf(PdfReportfPath, PdfReportName, new DateTime(2000, 1, 1), new DateTime(2014, 1, 1));
+            prdfReportGenerator.ExportSalesEntriesToPdf(PdfReportFilePath, PdfReportStartDate, PdfReportEndDate);
         }
 
         /// <summary>
@@ -87,7 +97,7 @@
         /// </summary>
         public static void GenerateExcelReportFromSQLiteAndMySqlDb()
         {
-            ExcelFileCreator.GenerateExcelReport(@"..\..\..\Reports\Excel\report.xlsx");
+            ExcelFileCreator.GenerateExcelReport(ExcelReportFilePath);
         }
     }
 }
