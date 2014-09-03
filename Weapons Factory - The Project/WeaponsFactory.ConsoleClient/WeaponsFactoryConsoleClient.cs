@@ -1,7 +1,6 @@
 ﻿namespace WeaponsFactory.ConsoleClient
 {
     using System;
-    using WeaponsFactory.Modules;
 
     public class WeaponsFactoryConsoleClient
     {

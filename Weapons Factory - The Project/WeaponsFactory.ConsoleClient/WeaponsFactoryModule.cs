@@ -2,7 +2,7 @@
 // Telerik Academy 2014
 // </copyright>
 
-namespace WeaponsFactory.Modules
+namespace WeaponsFactory.ConsoleClient
 {
     using System;
 
