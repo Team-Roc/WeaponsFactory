@@ -93,7 +93,13 @@ namespace WeaponsFactory.DataAccess
                 using (fileStream)
                 using (var streamReader = new StreamReader(fileStream))
                 {
-                    sales.Add(JsonConvert.DeserializeObject<ProductReport>(streamReader.ReadToEnd()));
+                    var productReport = JsonConvert.DeserializeObject<ProductReport>(streamReader.ReadToEnd());
+                    if (this.Reports.Any(p => p.WeaponId == productReport.WeaponId))
+                    {
+                        continue;
+                    }
+
+                    sales.Add(productReport);
                 }
             }
 
