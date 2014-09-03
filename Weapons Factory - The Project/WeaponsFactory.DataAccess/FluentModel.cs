@@ -35,7 +35,9 @@ namespace WeaponsFactory.DataAccess
 		
 		public WeaponsFactoryModel()
 			:base(connectionStringName, backend, metadataSource)
-		{ }
+		{
+            this.UpdateDatabase();
+        }
 		
 		public WeaponsFactoryModel(string connection)
 			:base(connection, backend, metadataSource)
@@ -53,11 +55,11 @@ namespace WeaponsFactory.DataAccess
 			:base(connection, backendConfiguration, metadataSource)
 		{ }
 
-        public IQueryable<Sale> Reports
+        public IQueryable<ProductReport> Reports
         {
             get
             {
-                return this.GetAll<Sale>();
+                return this.GetAll<ProductReport>();
             }
         }
 			
@@ -72,19 +74,16 @@ namespace WeaponsFactory.DataAccess
 			return backend;
 		}
 
-        public static void UpdateDatabase ()
+        private void UpdateDatabase ()
         {
-            using (var context = new WeaponsFactoryModel())
-            {
-                var schemaHandler = context.GetSchemaHandler();
-                EnsureDB(schemaHandler);
-            }
+            var schemaHandler = this.GetSchemaHandler();
+            EnsureDB(schemaHandler);
         }
 
         public void DeserializeWeapons ()
         {
             JsonSerializer serializer = new JsonSerializer();
-            var sales = new List<Sale>();
+            var sales = new List<ProductReport>();
 
             var jsonFiles = Directory.GetFiles(@"../../../JsonReports");
 
@@ -94,7 +93,7 @@ namespace WeaponsFactory.DataAccess
                 using (fileStream)
                 using (var streamReader = new StreamReader(fileStream))
                 {
-                    sales.Add(JsonConvert.DeserializeObject<Sale>(streamReader.ReadToEnd()));
+                    sales.Add(JsonConvert.DeserializeObject<ProductReport>(streamReader.ReadToEnd()));
                 }
             }
 

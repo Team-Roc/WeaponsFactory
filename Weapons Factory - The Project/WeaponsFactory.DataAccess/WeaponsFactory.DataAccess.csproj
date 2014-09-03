@@ -49,7 +49,7 @@
   <ItemGroup>
     <Compile Include="FluentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sale.cs" />
+    <Compile Include="ProductReport.cs" />
     <Compile Include="WeaponsFactoryModelMetadataSource.cs" />
   </ItemGroup>
   <ItemGroup>

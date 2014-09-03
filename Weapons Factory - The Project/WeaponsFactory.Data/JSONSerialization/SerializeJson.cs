@@ -8,21 +8,23 @@
     {
         public static void SerializeWeapons (IWeaponsFactoryDbContext context)
         {
-            var sales = context.Sales.Select(s => new
-            {
-                SaleId = s.SaleId,
-                WeaponId = s.WeaponId,
-                WeaponName = s.Weapon.Name,
-                VendorName = s.Vendor.Name,
-                Quantity = s.Quantity,
-                Income = s.Quantity * s.UnitPrice
-            });
+            var productsReports =
+                from weapon in context.Weapons
+                join sale in context.Sales on weapon.WeaponId equals sale.WeaponId
+                select new
+                {
+                    WeaponId = weapon.WeaponId,
+                    WeaponName = weapon.Name,
+                    ManufacturerName = weapon.Manufacturer.Name,
+                    Quantity = sale.Quantity,
+                    Income = sale.Quantity * sale.UnitPrice
+                };
 
             JsonSerializer serializer = new JsonSerializer();
 
-            foreach (var sale in sales)
+            foreach (var sale in productsReports)
             {
-                var currentSaleFile = "../../../JsonReports/" + sale.SaleId + ".json";
+                var currentSaleFile = "../../../JsonReports/" + sale.WeaponId + ".json";
                 if (File.Exists(currentSaleFile))
                 {
                     continue;

@@ -1,8 +1,7 @@
 {
-  "SaleId": 1,
   "WeaponId": 1,
   "WeaponName": "Summer Rain",
-  "VendorName": "Weapons of War",
+  "ManufacturerName": "Cold Steel",
   "Quantity": 5,
   "Income": 1000.00
 }

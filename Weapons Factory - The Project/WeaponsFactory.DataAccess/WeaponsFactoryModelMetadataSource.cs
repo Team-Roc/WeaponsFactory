@@ -27,17 +27,16 @@ namespace WeaponsFactory.DataAccess
 		{
             List<MappingConfiguration> configurations = new List<MappingConfiguration>();
 
-            var reportsMapping = new MappingConfiguration<Sale>();
+            var reportsMapping = new MappingConfiguration<ProductReport>();
             reportsMapping.MapType(sale => new
             {
-                SaleID = sale.SaleId,
                 WeaponId = sale.WeaponId,
                 WeaponName = sale.WeaponName,
-                VendorName = sale.VendorName,
+                VendorName = sale.ManufacturerName,
                 Quantity = sale.Quantity,
                 Income = sale.Income
             }).ToTable("Reports");
-            reportsMapping.HasProperty(c => c.SaleId).IsIdentity();
+            reportsMapping.HasProperty(c => c.WeaponId).IsIdentity(KeyGenerator.HighLow);
 
             configurations.Add(reportsMapping);
 

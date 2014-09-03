@@ -44,10 +44,9 @@
 
             var dataAccess = new WeaponsFactoryModel();
 
-            //data.GenerateJsonReports();
-            //dataAccess.DeserializeWeapons();
+            data.GenerateJsonReports();
 
-            //WeaponsFactoryModel.UpdateDatabase();
+            dataAccess.DeserializeWeapons();
             //foreach (var sale in sales)
             //{
             //    Console.WriteLine("date: {0}, Quantity: {1}, SaleId {2}, UnitePrice: {3}, Vendor: {4}, VendorID: {5}, Weapon: {6}, WeaponID {7}", sale.Date, sale.Quantity, sale.SaleId, sale.UnitPrice, sale.Vendor, sale.VendorId, sale.Weapon, sale.WeaponId);
