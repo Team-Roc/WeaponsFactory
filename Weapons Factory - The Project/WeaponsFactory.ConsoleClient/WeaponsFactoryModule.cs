@@ -87,7 +87,7 @@
         /// </summary>
         public static void GenerateExcelReportFromSQLiteAndMySqlDb()
         {
-
+            ExcelFileCreator.GenerateExcelReport(@"..\..\..\Reports\Excel\report.xlsx");
         }
     }
 }
