@@ -7,9 +7,9 @@
 
     public static class XMLReportsGenerator
     {
-        public static void GenerateSalesReport(IWeaponsFactoryDbContext db, string fullFilePath)
+        public static void GenerateSalesReport(IWeaponsFactoryData db, string fullFilePath)
         {
-            var sales = db.Sales.ToList();
+            var sales = db.Sales.All().ToList();
 
             var xdoc = new XDocument(new XElement("Sales",
                     from sale in sales

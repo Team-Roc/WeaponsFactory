@@ -1,0 +1,1353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sales>
+  <sale VendorId="5">
+    <summary date="2014-10-02T00:00:00" weaponId="1" quantity="16" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-02T00:00:00" weaponId="2" quantity="21" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-02T00:00:00" weaponId="3" quantity="53" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-02T00:00:00" weaponId="4" quantity="34" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-02T00:00:00" weaponId="5" quantity="20" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-02T00:00:00" weaponId="1" quantity="25" unit-price="1450.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-02T00:00:00" weaponId="2" quantity="51" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-02T00:00:00" weaponId="3" quantity="23" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-02T00:00:00" weaponId="4" quantity="63" unit-price="1900.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-02T00:00:00" weaponId="5" quantity="33" unit-price="1200.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-02T00:00:00" weaponId="1" quantity="61" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-02T00:00:00" weaponId="2" quantity="22" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-02T00:00:00" weaponId="3" quantity="71" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-02T00:00:00" weaponId="4" quantity="36" unit-price="1850.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-02T00:00:00" weaponId="5" quantity="63" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-02T00:00:00" weaponId="1" quantity="31" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-02T00:00:00" weaponId="2" quantity="26" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-02T00:00:00" weaponId="3" quantity="51" unit-price="1950.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-02T00:00:00" weaponId="4" quantity="94" unit-price="2600.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-02T00:00:00" weaponId="5" quantity="83" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-02T00:00:00" weaponId="1" quantity="13" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-02T00:00:00" weaponId="2" quantity="9" unit-price="1300.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-02T00:00:00" weaponId="3" quantity="32" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-02T00:00:00" weaponId="4" quantity="11" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-02T00:00:00" weaponId="5" quantity="8" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-03T00:00:00" weaponId="1" quantity="16" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-03T00:00:00" weaponId="2" quantity="21" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-03T00:00:00" weaponId="3" quantity="53" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-03T00:00:00" weaponId="4" quantity="34" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-03T00:00:00" weaponId="5" quantity="20" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-03T00:00:00" weaponId="1" quantity="25" unit-price="1450.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-03T00:00:00" weaponId="2" quantity="51" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-03T00:00:00" weaponId="3" quantity="23" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-03T00:00:00" weaponId="4" quantity="63" unit-price="1900.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-03T00:00:00" weaponId="5" quantity="33" unit-price="1200.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-03T00:00:00" weaponId="1" quantity="61" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-03T00:00:00" weaponId="2" quantity="22" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-03T00:00:00" weaponId="3" quantity="71" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-03T00:00:00" weaponId="4" quantity="36" unit-price="1850.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-03T00:00:00" weaponId="5" quantity="63" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-03T00:00:00" weaponId="1" quantity="31" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-03T00:00:00" weaponId="2" quantity="26" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-03T00:00:00" weaponId="3" quantity="51" unit-price="1950.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-03T00:00:00" weaponId="4" quantity="94" unit-price="2600.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-03T00:00:00" weaponId="5" quantity="83" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-03T00:00:00" weaponId="1" quantity="13" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-03T00:00:00" weaponId="2" quantity="9" unit-price="1300.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-03T00:00:00" weaponId="3" quantity="32" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-03T00:00:00" weaponId="4" quantity="11" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-03T00:00:00" weaponId="5" quantity="8" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="10">
+    <summary date="2013-10-04T00:00:00" weaponId="1" quantity="13" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="10">
+    <summary date="2013-10-04T00:00:00" weaponId="2" quantity="9" unit-price="1300.00" />
+  </sale>
+  <sale VendorId="10">
+    <summary date="2013-10-04T00:00:00" weaponId="3" quantity="32" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="10">
+    <summary date="2013-10-04T00:00:00" weaponId="4" quantity="11" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="10">
+    <summary date="2013-10-04T00:00:00" weaponId="5" quantity="8" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="7">
+    <summary date="2013-10-04T00:00:00" weaponId="1" quantity="25" unit-price="1450.00" />
+  </sale>
+  <sale VendorId="7">
+    <summary date="2013-10-04T00:00:00" weaponId="2" quantity="51" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="7">
+    <summary date="2013-10-04T00:00:00" weaponId="3" quantity="23" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="7">
+    <summary date="2013-10-04T00:00:00" weaponId="4" quantity="63" unit-price="1900.00" />
+  </sale>
+  <sale VendorId="7">
+    <summary date="2013-10-04T00:00:00" weaponId="5" quantity="33" unit-price="1200.00" />
+  </sale>
+  <sale VendorId="9">
+    <summary date="2013-10-04T00:00:00" weaponId="1" quantity="31" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="9">
+    <summary date="2013-10-04T00:00:00" weaponId="2" quantity="26" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="9">
+    <summary date="2013-10-04T00:00:00" weaponId="3" quantity="51" unit-price="1950.00" />
+  </sale>
+  <sale VendorId="9">
+    <summary date="2013-10-04T00:00:00" weaponId="4" quantity="94" unit-price="2600.00" />
+  </sale>
+  <sale VendorId="9">
+    <summary date="2013-10-04T00:00:00" weaponId="5" quantity="83" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="6">
+    <summary date="2013-10-04T00:00:00" weaponId="6" quantity="5" unit-price="60.00" />
+  </sale>
+  <sale VendorId="6">
+    <summary date="2013-10-04T00:00:00" weaponId="7" quantity="100" unit-price="20000.00" />
+  </sale>
+  <sale VendorId="6">
+    <summary date="2013-10-04T00:00:00" weaponId="8" quantity="22" unit-price="1500.00" />
+  </sale>
+  <sale VendorId="6">
+    <summary date="2013-10-04T00:00:00" weaponId="9" quantity="1" unit-price="5000.00" />
+  </sale>
+  <sale VendorId="6">
+    <summary date="2013-10-04T00:00:00" weaponId="10" quantity="42" unit-price="600.00" />
+  </sale>
+  <sale VendorId="8">
+    <summary date="2013-10-04T00:00:00" weaponId="1" quantity="61" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="8">
+    <summary date="2013-10-04T00:00:00" weaponId="2" quantity="22" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="8">
+    <summary date="2013-10-04T00:00:00" weaponId="3" quantity="71" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="8">
+    <summary date="2013-10-04T00:00:00" weaponId="4" quantity="36" unit-price="1850.00" />
+  </sale>
+  <sale VendorId="8">
+    <summary date="2013-10-04T00:00:00" weaponId="5" quantity="63" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-04T00:00:00" weaponId="1" quantity="16" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-04T00:00:00" weaponId="2" quantity="21" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-04T00:00:00" weaponId="3" quantity="53" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-04T00:00:00" weaponId="4" quantity="34" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-04T00:00:00" weaponId="5" quantity="20" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-04T00:00:00" weaponId="1" quantity="25" unit-price="1450.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-04T00:00:00" weaponId="2" quantity="51" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-04T00:00:00" weaponId="3" quantity="23" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-04T00:00:00" weaponId="4" quantity="63" unit-price="1900.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-04T00:00:00" weaponId="5" quantity="33" unit-price="1200.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-04T00:00:00" weaponId="1" quantity="61" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-04T00:00:00" weaponId="2" quantity="22" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-04T00:00:00" weaponId="3" quantity="71" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-04T00:00:00" weaponId="4" quantity="36" unit-price="1850.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-04T00:00:00" weaponId="5" quantity="63" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-04T00:00:00" weaponId="1" quantity="31" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-04T00:00:00" weaponId="2" quantity="26" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-04T00:00:00" weaponId="3" quantity="51" unit-price="1950.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-04T00:00:00" weaponId="4" quantity="94" unit-price="2600.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-04T00:00:00" weaponId="5" quantity="83" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-04T00:00:00" weaponId="1" quantity="13" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-04T00:00:00" weaponId="2" quantity="9" unit-price="1300.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-04T00:00:00" weaponId="3" quantity="32" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-04T00:00:00" weaponId="4" quantity="11" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-04T00:00:00" weaponId="5" quantity="8" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-05T00:00:00" weaponId="1" quantity="16" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-05T00:00:00" weaponId="2" quantity="21" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-05T00:00:00" weaponId="3" quantity="53" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-05T00:00:00" weaponId="4" quantity="34" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-05T00:00:00" weaponId="5" quantity="20" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-05T00:00:00" weaponId="1" quantity="25" unit-price="1450.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-05T00:00:00" weaponId="2" quantity="51" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-05T00:00:00" weaponId="3" quantity="23" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-05T00:00:00" weaponId="4" quantity="63" unit-price="1900.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-05T00:00:00" weaponId="5" quantity="33" unit-price="1200.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-05T00:00:00" weaponId="1" quantity="61" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-05T00:00:00" weaponId="2" quantity="22" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-05T00:00:00" weaponId="3" quantity="71" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-05T00:00:00" weaponId="4" quantity="36" unit-price="1850.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-05T00:00:00" weaponId="5" quantity="63" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-05T00:00:00" weaponId="1" quantity="31" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-05T00:00:00" weaponId="2" quantity="26" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-05T00:00:00" weaponId="3" quantity="51" unit-price="1950.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-05T00:00:00" weaponId="4" quantity="94" unit-price="2600.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-05T00:00:00" weaponId="5" quantity="83" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-05T00:00:00" weaponId="1" quantity="13" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-05T00:00:00" weaponId="2" quantity="9" unit-price="1300.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-05T00:00:00" weaponId="3" quantity="32" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-05T00:00:00" weaponId="4" quantity="11" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-05T00:00:00" weaponId="5" quantity="8" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-06T00:00:00" weaponId="1" quantity="16" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-06T00:00:00" weaponId="2" quantity="21" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-06T00:00:00" weaponId="3" quantity="53" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-06T00:00:00" weaponId="4" quantity="34" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-06T00:00:00" weaponId="5" quantity="20" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-06T00:00:00" weaponId="1" quantity="25" unit-price="1450.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-06T00:00:00" weaponId="2" quantity="51" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-06T00:00:00" weaponId="3" quantity="23" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-06T00:00:00" weaponId="4" quantity="63" unit-price="1900.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-06T00:00:00" weaponId="5" quantity="33" unit-price="1200.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-06T00:00:00" weaponId="1" quantity="61" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-06T00:00:00" weaponId="2" quantity="22" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-06T00:00:00" weaponId="3" quantity="71" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-06T00:00:00" weaponId="4" quantity="36" unit-price="1850.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-06T00:00:00" weaponId="5" quantity="63" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-06T00:00:00" weaponId="1" quantity="31" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-06T00:00:00" weaponId="2" quantity="26" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-06T00:00:00" weaponId="3" quantity="51" unit-price="1950.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-06T00:00:00" weaponId="4" quantity="94" unit-price="2600.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-06T00:00:00" weaponId="5" quantity="83" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-06T00:00:00" weaponId="1" quantity="13" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-06T00:00:00" weaponId="2" quantity="9" unit-price="1300.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-06T00:00:00" weaponId="3" quantity="32" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-06T00:00:00" weaponId="4" quantity="11" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-06T00:00:00" weaponId="5" quantity="8" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-07T00:00:00" weaponId="1" quantity="16" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-07T00:00:00" weaponId="2" quantity="21" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-07T00:00:00" weaponId="3" quantity="53" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-07T00:00:00" weaponId="4" quantity="34" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-07T00:00:00" weaponId="5" quantity="20" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-07T00:00:00" weaponId="1" quantity="25" unit-price="1450.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-07T00:00:00" weaponId="2" quantity="51" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-07T00:00:00" weaponId="3" quantity="23" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-07T00:00:00" weaponId="4" quantity="63" unit-price="1900.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-07T00:00:00" weaponId="5" quantity="33" unit-price="1200.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-07T00:00:00" weaponId="1" quantity="61" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-07T00:00:00" weaponId="2" quantity="22" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-07T00:00:00" weaponId="3" quantity="71" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-07T00:00:00" weaponId="4" quantity="36" unit-price="1850.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-07T00:00:00" weaponId="5" quantity="63" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-07T00:00:00" weaponId="1" quantity="31" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-07T00:00:00" weaponId="2" quantity="26" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-07T00:00:00" weaponId="3" quantity="51" unit-price="1950.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-07T00:00:00" weaponId="4" quantity="94" unit-price="2600.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-07T00:00:00" weaponId="5" quantity="83" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-07T00:00:00" weaponId="1" quantity="13" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-07T00:00:00" weaponId="2" quantity="9" unit-price="1300.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-07T00:00:00" weaponId="3" quantity="32" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-07T00:00:00" weaponId="4" quantity="11" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-07T00:00:00" weaponId="5" quantity="8" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-08T00:00:00" weaponId="1" quantity="16" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-08T00:00:00" weaponId="2" quantity="21" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-08T00:00:00" weaponId="3" quantity="53" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-08T00:00:00" weaponId="4" quantity="34" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-08T00:00:00" weaponId="5" quantity="20" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-08T00:00:00" weaponId="1" quantity="25" unit-price="1450.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-08T00:00:00" weaponId="2" quantity="51" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-08T00:00:00" weaponId="3" quantity="23" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-08T00:00:00" weaponId="4" quantity="63" unit-price="1900.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-08T00:00:00" weaponId="5" quantity="33" unit-price="1200.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-08T00:00:00" weaponId="1" quantity="61" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-08T00:00:00" weaponId="2" quantity="22" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-08T00:00:00" weaponId="3" quantity="71" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-08T00:00:00" weaponId="4" quantity="36" unit-price="1850.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-08T00:00:00" weaponId="5" quantity="63" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-08T00:00:00" weaponId="1" quantity="31" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-08T00:00:00" weaponId="2" quantity="26" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-08T00:00:00" weaponId="3" quantity="51" unit-price="1950.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-08T00:00:00" weaponId="4" quantity="94" unit-price="2600.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-08T00:00:00" weaponId="5" quantity="83" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-08T00:00:00" weaponId="1" quantity="13" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-08T00:00:00" weaponId="2" quantity="9" unit-price="1300.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-08T00:00:00" weaponId="3" quantity="32" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-08T00:00:00" weaponId="4" quantity="11" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-08T00:00:00" weaponId="5" quantity="8" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-09T00:00:00" weaponId="1" quantity="16" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-09T00:00:00" weaponId="2" quantity="21" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-09T00:00:00" weaponId="3" quantity="53" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-09T00:00:00" weaponId="4" quantity="34" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-09T00:00:00" weaponId="5" quantity="20" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-09T00:00:00" weaponId="1" quantity="25" unit-price="1450.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-09T00:00:00" weaponId="2" quantity="51" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-09T00:00:00" weaponId="3" quantity="23" unit-price="2200.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-09T00:00:00" weaponId="4" quantity="63" unit-price="1900.00" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-09T00:00:00" weaponId="5" quantity="33" unit-price="1200.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-09T00:00:00" weaponId="1" quantity="61" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-09T00:00:00" weaponId="2" quantity="22" unit-price="1400.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-09T00:00:00" weaponId="3" quantity="71" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-09T00:00:00" weaponId="4" quantity="36" unit-price="1850.00" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-09T00:00:00" weaponId="5" quantity="63" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-09T00:00:00" weaponId="1" quantity="31" unit-price="1250.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-09T00:00:00" weaponId="2" quantity="26" unit-price="1000.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-09T00:00:00" weaponId="3" quantity="51" unit-price="1950.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-09T00:00:00" weaponId="4" quantity="94" unit-price="2600.00" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-09T00:00:00" weaponId="5" quantity="83" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-09T00:00:00" weaponId="1" quantity="13" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-09T00:00:00" weaponId="2" quantity="9" unit-price="1300.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-09T00:00:00" weaponId="3" quantity="32" unit-price="2000.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-09T00:00:00" weaponId="4" quantity="11" unit-price="1750.00" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-09T00:00:00" weaponId="5" quantity="8" unit-price="1100.00" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-02T00:00:00" weaponId="1" quantity="16" unit-price="1400" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-02T00:00:00" weaponId="2" quantity="21" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-02T00:00:00" weaponId="3" quantity="53" unit-price="2000" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-02T00:00:00" weaponId="4" quantity="34" unit-price="2200" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-02T00:00:00" weaponId="5" quantity="20" unit-price="1100" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-02T00:00:00" weaponId="1" quantity="25" unit-price="1450" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-02T00:00:00" weaponId="2" quantity="51" unit-price="1000" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-02T00:00:00" weaponId="3" quantity="23" unit-price="2200" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-02T00:00:00" weaponId="4" quantity="63" unit-price="1900" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-02T00:00:00" weaponId="5" quantity="33" unit-price="1200" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-02T00:00:00" weaponId="1" quantity="61" unit-price="1000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-02T00:00:00" weaponId="2" quantity="22" unit-price="1400" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-02T00:00:00" weaponId="3" quantity="71" unit-price="2000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-02T00:00:00" weaponId="4" quantity="36" unit-price="1850" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-02T00:00:00" weaponId="5" quantity="63" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-02T00:00:00" weaponId="1" quantity="31" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-02T00:00:00" weaponId="2" quantity="26" unit-price="1000" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-02T00:00:00" weaponId="3" quantity="51" unit-price="1950" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-02T00:00:00" weaponId="4" quantity="94" unit-price="2600" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-02T00:00:00" weaponId="5" quantity="83" unit-price="1100" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-02T00:00:00" weaponId="1" quantity="13" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-02T00:00:00" weaponId="2" quantity="9" unit-price="1300" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-02T00:00:00" weaponId="3" quantity="32" unit-price="2000" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-02T00:00:00" weaponId="4" quantity="11" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-02T00:00:00" weaponId="5" quantity="8" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-03T00:00:00" weaponId="1" quantity="16" unit-price="1400" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-03T00:00:00" weaponId="2" quantity="21" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-03T00:00:00" weaponId="3" quantity="53" unit-price="2000" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-03T00:00:00" weaponId="4" quantity="34" unit-price="2200" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-03T00:00:00" weaponId="5" quantity="20" unit-price="1100" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-03T00:00:00" weaponId="1" quantity="25" unit-price="1450" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-03T00:00:00" weaponId="2" quantity="51" unit-price="1000" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-03T00:00:00" weaponId="3" quantity="23" unit-price="2200" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-03T00:00:00" weaponId="4" quantity="63" unit-price="1900" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-03T00:00:00" weaponId="5" quantity="33" unit-price="1200" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-03T00:00:00" weaponId="1" quantity="61" unit-price="1000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-03T00:00:00" weaponId="2" quantity="22" unit-price="1400" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-03T00:00:00" weaponId="3" quantity="71" unit-price="2000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-03T00:00:00" weaponId="4" quantity="36" unit-price="1850" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-03T00:00:00" weaponId="5" quantity="63" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-03T00:00:00" weaponId="1" quantity="31" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-03T00:00:00" weaponId="2" quantity="26" unit-price="1000" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-03T00:00:00" weaponId="3" quantity="51" unit-price="1950" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-03T00:00:00" weaponId="4" quantity="94" unit-price="2600" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-03T00:00:00" weaponId="5" quantity="83" unit-price="1100" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-03T00:00:00" weaponId="1" quantity="13" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-03T00:00:00" weaponId="2" quantity="9" unit-price="1300" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-03T00:00:00" weaponId="3" quantity="32" unit-price="2000" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-03T00:00:00" weaponId="4" quantity="11" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-03T00:00:00" weaponId="5" quantity="8" unit-price="1100" />
+  </sale>
+  <sale VendorId="10">
+    <summary date="2013-10-04T00:00:00" weaponId="1" quantity="13" unit-price="1750" />
+  </sale>
+  <sale VendorId="10">
+    <summary date="2013-10-04T00:00:00" weaponId="2" quantity="9" unit-price="1300" />
+  </sale>
+  <sale VendorId="10">
+    <summary date="2013-10-04T00:00:00" weaponId="3" quantity="32" unit-price="2000" />
+  </sale>
+  <sale VendorId="10">
+    <summary date="2013-10-04T00:00:00" weaponId="4" quantity="11" unit-price="1750" />
+  </sale>
+  <sale VendorId="10">
+    <summary date="2013-10-04T00:00:00" weaponId="5" quantity="8" unit-price="1100" />
+  </sale>
+  <sale VendorId="7">
+    <summary date="2013-10-04T00:00:00" weaponId="1" quantity="25" unit-price="1450" />
+  </sale>
+  <sale VendorId="7">
+    <summary date="2013-10-04T00:00:00" weaponId="2" quantity="51" unit-price="1000" />
+  </sale>
+  <sale VendorId="7">
+    <summary date="2013-10-04T00:00:00" weaponId="3" quantity="23" unit-price="2200" />
+  </sale>
+  <sale VendorId="7">
+    <summary date="2013-10-04T00:00:00" weaponId="4" quantity="63" unit-price="1900" />
+  </sale>
+  <sale VendorId="7">
+    <summary date="2013-10-04T00:00:00" weaponId="5" quantity="33" unit-price="1200" />
+  </sale>
+  <sale VendorId="9">
+    <summary date="2013-10-04T00:00:00" weaponId="1" quantity="31" unit-price="1250" />
+  </sale>
+  <sale VendorId="9">
+    <summary date="2013-10-04T00:00:00" weaponId="2" quantity="26" unit-price="1000" />
+  </sale>
+  <sale VendorId="9">
+    <summary date="2013-10-04T00:00:00" weaponId="3" quantity="51" unit-price="1950" />
+  </sale>
+  <sale VendorId="9">
+    <summary date="2013-10-04T00:00:00" weaponId="4" quantity="94" unit-price="2600" />
+  </sale>
+  <sale VendorId="9">
+    <summary date="2013-10-04T00:00:00" weaponId="5" quantity="83" unit-price="1100" />
+  </sale>
+  <sale VendorId="6">
+    <summary date="2013-10-04T00:00:00" weaponId="6" quantity="5" unit-price="60" />
+  </sale>
+  <sale VendorId="6">
+    <summary date="2013-10-04T00:00:00" weaponId="7" quantity="100" unit-price="20000" />
+  </sale>
+  <sale VendorId="6">
+    <summary date="2013-10-04T00:00:00" weaponId="8" quantity="22" unit-price="1500" />
+  </sale>
+  <sale VendorId="6">
+    <summary date="2013-10-04T00:00:00" weaponId="9" quantity="1" unit-price="5000" />
+  </sale>
+  <sale VendorId="6">
+    <summary date="2013-10-04T00:00:00" weaponId="10" quantity="42" unit-price="600" />
+  </sale>
+  <sale VendorId="8">
+    <summary date="2013-10-04T00:00:00" weaponId="1" quantity="61" unit-price="1000" />
+  </sale>
+  <sale VendorId="8">
+    <summary date="2013-10-04T00:00:00" weaponId="2" quantity="22" unit-price="1400" />
+  </sale>
+  <sale VendorId="8">
+    <summary date="2013-10-04T00:00:00" weaponId="3" quantity="71" unit-price="2000" />
+  </sale>
+  <sale VendorId="8">
+    <summary date="2013-10-04T00:00:00" weaponId="4" quantity="36" unit-price="1850" />
+  </sale>
+  <sale VendorId="8">
+    <summary date="2013-10-04T00:00:00" weaponId="5" quantity="63" unit-price="1250" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-04T00:00:00" weaponId="1" quantity="16" unit-price="1400" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-04T00:00:00" weaponId="2" quantity="21" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-04T00:00:00" weaponId="3" quantity="53" unit-price="2000" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-04T00:00:00" weaponId="4" quantity="34" unit-price="2200" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-04T00:00:00" weaponId="5" quantity="20" unit-price="1100" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-04T00:00:00" weaponId="1" quantity="25" unit-price="1450" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-04T00:00:00" weaponId="2" quantity="51" unit-price="1000" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-04T00:00:00" weaponId="3" quantity="23" unit-price="2200" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-04T00:00:00" weaponId="4" quantity="63" unit-price="1900" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-04T00:00:00" weaponId="5" quantity="33" unit-price="1200" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-04T00:00:00" weaponId="1" quantity="61" unit-price="1000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-04T00:00:00" weaponId="2" quantity="22" unit-price="1400" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-04T00:00:00" weaponId="3" quantity="71" unit-price="2000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-04T00:00:00" weaponId="4" quantity="36" unit-price="1850" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-04T00:00:00" weaponId="5" quantity="63" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-04T00:00:00" weaponId="1" quantity="31" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-04T00:00:00" weaponId="2" quantity="26" unit-price="1000" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-04T00:00:00" weaponId="3" quantity="51" unit-price="1950" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-04T00:00:00" weaponId="4" quantity="94" unit-price="2600" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-04T00:00:00" weaponId="5" quantity="83" unit-price="1100" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-04T00:00:00" weaponId="1" quantity="13" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-04T00:00:00" weaponId="2" quantity="9" unit-price="1300" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-04T00:00:00" weaponId="3" quantity="32" unit-price="2000" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-04T00:00:00" weaponId="4" quantity="11" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-04T00:00:00" weaponId="5" quantity="8" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-05T00:00:00" weaponId="1" quantity="16" unit-price="1400" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-05T00:00:00" weaponId="2" quantity="21" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-05T00:00:00" weaponId="3" quantity="53" unit-price="2000" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-05T00:00:00" weaponId="4" quantity="34" unit-price="2200" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-05T00:00:00" weaponId="5" quantity="20" unit-price="1100" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-05T00:00:00" weaponId="1" quantity="25" unit-price="1450" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-05T00:00:00" weaponId="2" quantity="51" unit-price="1000" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-05T00:00:00" weaponId="3" quantity="23" unit-price="2200" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-05T00:00:00" weaponId="4" quantity="63" unit-price="1900" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-05T00:00:00" weaponId="5" quantity="33" unit-price="1200" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-05T00:00:00" weaponId="1" quantity="61" unit-price="1000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-05T00:00:00" weaponId="2" quantity="22" unit-price="1400" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-05T00:00:00" weaponId="3" quantity="71" unit-price="2000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-05T00:00:00" weaponId="4" quantity="36" unit-price="1850" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-05T00:00:00" weaponId="5" quantity="63" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-05T00:00:00" weaponId="1" quantity="31" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-05T00:00:00" weaponId="2" quantity="26" unit-price="1000" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-05T00:00:00" weaponId="3" quantity="51" unit-price="1950" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-05T00:00:00" weaponId="4" quantity="94" unit-price="2600" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-05T00:00:00" weaponId="5" quantity="83" unit-price="1100" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-05T00:00:00" weaponId="1" quantity="13" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-05T00:00:00" weaponId="2" quantity="9" unit-price="1300" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-05T00:00:00" weaponId="3" quantity="32" unit-price="2000" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-05T00:00:00" weaponId="4" quantity="11" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-05T00:00:00" weaponId="5" quantity="8" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-06T00:00:00" weaponId="1" quantity="16" unit-price="1400" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-06T00:00:00" weaponId="2" quantity="21" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-06T00:00:00" weaponId="3" quantity="53" unit-price="2000" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-06T00:00:00" weaponId="4" quantity="34" unit-price="2200" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-06T00:00:00" weaponId="5" quantity="20" unit-price="1100" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-06T00:00:00" weaponId="1" quantity="25" unit-price="1450" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-06T00:00:00" weaponId="2" quantity="51" unit-price="1000" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-06T00:00:00" weaponId="3" quantity="23" unit-price="2200" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-06T00:00:00" weaponId="4" quantity="63" unit-price="1900" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-06T00:00:00" weaponId="5" quantity="33" unit-price="1200" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-06T00:00:00" weaponId="1" quantity="61" unit-price="1000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-06T00:00:00" weaponId="2" quantity="22" unit-price="1400" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-06T00:00:00" weaponId="3" quantity="71" unit-price="2000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-06T00:00:00" weaponId="4" quantity="36" unit-price="1850" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-06T00:00:00" weaponId="5" quantity="63" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-06T00:00:00" weaponId="1" quantity="31" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-06T00:00:00" weaponId="2" quantity="26" unit-price="1000" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-06T00:00:00" weaponId="3" quantity="51" unit-price="1950" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-06T00:00:00" weaponId="4" quantity="94" unit-price="2600" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-06T00:00:00" weaponId="5" quantity="83" unit-price="1100" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-06T00:00:00" weaponId="1" quantity="13" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-06T00:00:00" weaponId="2" quantity="9" unit-price="1300" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-06T00:00:00" weaponId="3" quantity="32" unit-price="2000" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-06T00:00:00" weaponId="4" quantity="11" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-06T00:00:00" weaponId="5" quantity="8" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-07T00:00:00" weaponId="1" quantity="16" unit-price="1400" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-07T00:00:00" weaponId="2" quantity="21" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-07T00:00:00" weaponId="3" quantity="53" unit-price="2000" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-07T00:00:00" weaponId="4" quantity="34" unit-price="2200" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-07T00:00:00" weaponId="5" quantity="20" unit-price="1100" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-07T00:00:00" weaponId="1" quantity="25" unit-price="1450" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-07T00:00:00" weaponId="2" quantity="51" unit-price="1000" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-07T00:00:00" weaponId="3" quantity="23" unit-price="2200" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-07T00:00:00" weaponId="4" quantity="63" unit-price="1900" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-07T00:00:00" weaponId="5" quantity="33" unit-price="1200" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-07T00:00:00" weaponId="1" quantity="61" unit-price="1000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-07T00:00:00" weaponId="2" quantity="22" unit-price="1400" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-07T00:00:00" weaponId="3" quantity="71" unit-price="2000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-07T00:00:00" weaponId="4" quantity="36" unit-price="1850" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-07T00:00:00" weaponId="5" quantity="63" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-07T00:00:00" weaponId="1" quantity="31" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-07T00:00:00" weaponId="2" quantity="26" unit-price="1000" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-07T00:00:00" weaponId="3" quantity="51" unit-price="1950" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-07T00:00:00" weaponId="4" quantity="94" unit-price="2600" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-07T00:00:00" weaponId="5" quantity="83" unit-price="1100" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-07T00:00:00" weaponId="1" quantity="13" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-07T00:00:00" weaponId="2" quantity="9" unit-price="1300" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-07T00:00:00" weaponId="3" quantity="32" unit-price="2000" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-07T00:00:00" weaponId="4" quantity="11" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-07T00:00:00" weaponId="5" quantity="8" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-08T00:00:00" weaponId="1" quantity="16" unit-price="1400" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-08T00:00:00" weaponId="2" quantity="21" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-08T00:00:00" weaponId="3" quantity="53" unit-price="2000" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-08T00:00:00" weaponId="4" quantity="34" unit-price="2200" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-08T00:00:00" weaponId="5" quantity="20" unit-price="1100" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-08T00:00:00" weaponId="1" quantity="25" unit-price="1450" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-08T00:00:00" weaponId="2" quantity="51" unit-price="1000" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-08T00:00:00" weaponId="3" quantity="23" unit-price="2200" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-08T00:00:00" weaponId="4" quantity="63" unit-price="1900" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-08T00:00:00" weaponId="5" quantity="33" unit-price="1200" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-08T00:00:00" weaponId="1" quantity="61" unit-price="1000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-08T00:00:00" weaponId="2" quantity="22" unit-price="1400" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-08T00:00:00" weaponId="3" quantity="71" unit-price="2000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-08T00:00:00" weaponId="4" quantity="36" unit-price="1850" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-08T00:00:00" weaponId="5" quantity="63" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-08T00:00:00" weaponId="1" quantity="31" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-08T00:00:00" weaponId="2" quantity="26" unit-price="1000" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-08T00:00:00" weaponId="3" quantity="51" unit-price="1950" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-08T00:00:00" weaponId="4" quantity="94" unit-price="2600" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-08T00:00:00" weaponId="5" quantity="83" unit-price="1100" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-08T00:00:00" weaponId="1" quantity="13" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-08T00:00:00" weaponId="2" quantity="9" unit-price="1300" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-08T00:00:00" weaponId="3" quantity="32" unit-price="2000" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-08T00:00:00" weaponId="4" quantity="11" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-08T00:00:00" weaponId="5" quantity="8" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-09T00:00:00" weaponId="1" quantity="16" unit-price="1400" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-09T00:00:00" weaponId="2" quantity="21" unit-price="1100" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-09T00:00:00" weaponId="3" quantity="53" unit-price="2000" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-09T00:00:00" weaponId="4" quantity="34" unit-price="2200" />
+  </sale>
+  <sale VendorId="5">
+    <summary date="2014-10-09T00:00:00" weaponId="5" quantity="20" unit-price="1100" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-09T00:00:00" weaponId="1" quantity="25" unit-price="1450" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-09T00:00:00" weaponId="2" quantity="51" unit-price="1000" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-09T00:00:00" weaponId="3" quantity="23" unit-price="2200" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-09T00:00:00" weaponId="4" quantity="63" unit-price="1900" />
+  </sale>
+  <sale VendorId="1">
+    <summary date="2014-10-09T00:00:00" weaponId="5" quantity="33" unit-price="1200" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-09T00:00:00" weaponId="1" quantity="61" unit-price="1000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-09T00:00:00" weaponId="2" quantity="22" unit-price="1400" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-09T00:00:00" weaponId="3" quantity="71" unit-price="2000" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-09T00:00:00" weaponId="4" quantity="36" unit-price="1850" />
+  </sale>
+  <sale VendorId="2">
+    <summary date="2014-10-09T00:00:00" weaponId="5" quantity="63" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-09T00:00:00" weaponId="1" quantity="31" unit-price="1250" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-09T00:00:00" weaponId="2" quantity="26" unit-price="1000" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-09T00:00:00" weaponId="3" quantity="51" unit-price="1950" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-09T00:00:00" weaponId="4" quantity="94" unit-price="2600" />
+  </sale>
+  <sale VendorId="3">
+    <summary date="2014-10-09T00:00:00" weaponId="5" quantity="83" unit-price="1100" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-09T00:00:00" weaponId="1" quantity="13" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-09T00:00:00" weaponId="2" quantity="9" unit-price="1300" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-09T00:00:00" weaponId="3" quantity="32" unit-price="2000" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-09T00:00:00" weaponId="4" quantity="11" unit-price="1750" />
+  </sale>
+  <sale VendorId="4">
+    <summary date="2014-10-09T00:00:00" weaponId="5" quantity="8" unit-price="1100" />
+  </sale>
+</Sales>

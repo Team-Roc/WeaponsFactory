@@ -10,12 +10,14 @@ namespace WeaponsFactory.ConsoleClient
     using WeaponsFactory.Data.PDFReportGeneration;
     using WeaponsFactory.DataAccess;
     using WeaponsFactory.ExcelIO;
+    using WeaponsFactory.XMLOperations;
 
     public static class WeaponsFactoryFacade
     {
         private const string ZipReportFilePath = "../../../InputData/WeaponsFactorySalesReports.zip";
         private const string DataSourcesSQLitePath = "../../../InputData/AmmoOffered.sqlite";
         private const string PdfReportFilePath = "../../../Reports/PDF/Report.pdf";
+        private const string XmlReportFilePath = "../../../Reports/XML/Report.xml";
         private const string ExcelReportFilePath = "../../../Reports/Excel/WeaponsFactoryFinancialResult.xlsx";
 
         private const string InitializeDataMessage = "Database initializing... ";
@@ -94,8 +96,8 @@ namespace WeaponsFactory.ConsoleClient
         public static void GenerateXmlReport()
         {
             WeaponsFactoryConsoleWriter.StartProcess(GenerateXmlReportMessage);
-
-            //TODO!
+            
+            XMLReportsGenerator.GenerateSalesReport(weaponsFactorySqlData, XmlReportFilePath);
 
             WeaponsFactoryConsoleWriter.Success(SuccessMessage);
         }
