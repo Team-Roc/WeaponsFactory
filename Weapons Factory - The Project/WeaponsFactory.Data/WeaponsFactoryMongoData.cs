@@ -35,6 +35,18 @@ namespace WeaponsFactory.Data
         }
 
         /// <summary>
+        /// Insert new entity in some Mongo database collection.
+        /// </summary>
+        /// <typeparam name="T">Mongo database model.</typeparam>
+        /// <param name="entity">The entity.</param>
+        /// <param name="collectionName">Mongo database collection name.</param>
+        public void InsertEntity<T>(T entity, string collectionName)
+        {
+            var mongoEntities = this.mongoDb.GetCollection<T>(collectionName);
+            mongoEntities.Insert(entity);
+        }
+
+        /// <summary>
         /// Transfers the whole data from Mongo database to SQL database
         /// </summary>
         public void TransferDataToSqlDb()
@@ -161,18 +173,6 @@ namespace WeaponsFactory.Data
             }
 
             return weapons;
-        }
-
-        /// <summary>
-        /// Insert new entity in some Mongo database collection.
-        /// </summary>
-        /// <typeparam name="T">Mongo database model.</typeparam>
-        /// <param name="entity">The entity.</param>
-        /// <param name="collectionName">Mongo database collection name.</param>
-        public void InsertEntity<T>(T entity, string collectionName)
-        {
-            var mongoEntities = this.mongoDb.GetCollection<T>(collectionName);
-            mongoEntities.Insert(entity);
         }
     }
 }

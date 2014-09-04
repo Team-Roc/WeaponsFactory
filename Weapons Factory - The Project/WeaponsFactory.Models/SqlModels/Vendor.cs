@@ -33,6 +33,7 @@
             {
                 return this.sales;
             }
+
             set
             {
                 this.sales = value;

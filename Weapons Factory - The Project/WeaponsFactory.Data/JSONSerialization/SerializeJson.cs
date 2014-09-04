@@ -20,15 +20,6 @@
                     Income = sale.Quantity * sale.UnitPrice
                 };
 
-            // var productsReports = context.Weapons.Join(context.Sales, w => w.WeaponId, s => s.WeaponId, (w, s) => new
-            //    {
-            //        WeaponId = w.WeaponId,
-            //        WeaponName = w.Name,
-            //        ManufacturerName = w.Manufacturer.Name,
-            //        Quantity = s.Quantity,
-            //        Income = s.Quantity * s.UnitPrice
-            //    });
-
             JsonSerializer serializer = new JsonSerializer();
 
             foreach (var sale in productsReports)

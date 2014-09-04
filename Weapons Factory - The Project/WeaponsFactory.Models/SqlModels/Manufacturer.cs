@@ -28,6 +28,7 @@
             {
                 return this.weapons;
             }
+
             set
             {
                 this.weapons = value;

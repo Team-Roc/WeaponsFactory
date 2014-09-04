@@ -1,7 +1,7 @@
 ﻿namespace WeaponsFactory.XMLOperations
 {
-    using System.Xml.Linq;
     using System.Linq;
+    using System.Xml.Linq;
 
     using WeaponsFactory.Data;
 
@@ -19,10 +19,7 @@
                             new XAttribute("date", sale.Date),
                             new XAttribute("weaponId", sale.WeaponId),
                             new XAttribute("quantity", sale.Quantity),
-                            new XAttribute("unit-price", sale.UnitPrice)
-                                )
-                            )
-                        ));
+                            new XAttribute("unit-price", sale.UnitPrice)))));
 
             xdoc.Save(fullFilePath);
         }

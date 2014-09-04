@@ -19,7 +19,7 @@ namespace WeaponsFactory.ConsoleClient
         private const string DataSourcesSQLitePath = "../../../InputData/AmmoOffered.sqlite";
         private const string PdfReportFilePath = "../../../Reports/PDF/Report.pdf";
         private const string XmlReportFilePath = "../../../Reports/XML/Report.xml";
-        private const string ExcelReportFilePath = "../../../Reports/Excel/WeaponsFactoryFinancialResult.xlsx";
+        private const string ExcelReportFilePath = "../../../Reports/Excel/WeaponsFactoryFinancialReport.xlsx";
 
         private const string InitializeDataMessage = "Database initializing... ";
         private const string TransferDataToSqlDbMessage = "MongoDb to SqlDb... ";
@@ -129,7 +129,7 @@ namespace WeaponsFactory.ConsoleClient
         }
 
         /// <summary>
-        /// Load data from XML and save it in Mongo database
+        /// Load data from XML and save it in SQL and Mongo database
         /// </summary>
         public static void LoadDataFromXmlInSqlAndMongoDb()
         {
