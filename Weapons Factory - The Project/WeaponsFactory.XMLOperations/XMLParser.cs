@@ -4,6 +4,7 @@
     using System.Collections.Generic;
     using System.Xml;
 
+    using WeaponsFactory.Data;
     using WeaponsFactory.Models.SqlModels;
 
     public static class XMLParser
@@ -26,7 +27,7 @@
                 var vendorId = node.Attributes["vendorId"].Value;
                 var weaponId = node.SelectSingleNode("summary").Attributes["weaponId"].Value;
 
-                Sale newSale = new Sale() 
+                Sale newSale = new Sale()
                 {
                     Date = DateTime.Parse(date),
                     Quantity = int.Parse(quantity),
@@ -41,7 +42,7 @@
             return sales;
         }
 
-        public static IEnumerable<Category> GetCategoryFromFile(string fullFilePath)
+        public static IEnumerable<Category> GetCategoriesFromFile(string fullFilePath)
         {
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(fullFilePath);
@@ -54,7 +55,7 @@
             foreach (XmlNode node in nodesList)
             {
                 var categoryName = node.Attributes["name"].Value;
-                
+
                 var newCategory = new Category()
                 {
                     Name = categoryName
@@ -82,6 +83,26 @@
             }
 
             return categories;
+        }
+
+        public static void ImportSalesXMLToSql(IWeaponsFactoryDbContext db, string fullFilePath)
+        {
+            var salesToImport = GetSalesFromFile(fullFilePath);
+
+            foreach (var sale in salesToImport)
+            {
+                db.Sales.Add(sale);
+            }            
+        }
+
+        public static void ImportCategoriesXMLToSql(IWeaponsFactoryDbContext db, string fullFilePath)
+        {
+            var categoriesToImport = GetCategoriesFromFile(fullFilePath);
+
+            foreach (var category in categoriesToImport)
+            {
+                db.Categories.Add(category);
+            }
         }
     }
 }
