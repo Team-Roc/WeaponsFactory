@@ -1,6 +1,5 @@
 ﻿namespace WeaponsFactory.ExcelIO
 {
-    using System;
     using System.Data;
     using System.Data.SQLite;
     using System.IO;
@@ -8,31 +7,29 @@
 
     using OfficeOpenXml;
     using OfficeOpenXml.Table;
-    using Telerik.OpenAccess;
     using WeaponsFactory.DataAccess;
-
 
     public static class ExcelFileCreator
     {
         private const string ReportStartCell = "A1";
         private const string ConnStr = @"Data Source={0};Version=3;";
-        private const string SqliteFilePath = @"D:\AmmoOffered.sqlite";
+        //private const string SqliteFilePath = @"D:\AmmoOffered.sqlite";
 
-        public static void GenerateExcelReport(string filePath, string sheetName = "Sheet1")
+        public static void GenerateExcelReport(string reportFilePath, string dataSourcePath, string sheetName = "Sheet1")
         {
-            var sqliteData = GetSqliteData();
+            var sqliteData = GetSqliteData(dataSourcePath);
             var mySqlData = GetMySqlData();
 
-            DataTable reportData = MergeDataTables(sqliteData, mySqlData);
+            var reportData = MergeDataTables(sqliteData, mySqlData);
 
-            CreateExcelReport(sqliteData, sheetName, filePath);
+            CreateExcelReport(reportData, sheetName, reportFilePath);
         }
 
-        private static DataTable GetSqliteData()
+        private static DataTable GetSqliteData(string dataSourcePath)
         {
             var result = new DataTable();
 
-            var connStr = string.Format(ExcelFileCreator.ConnStr, ExcelFileCreator.SqliteFilePath);
+            var connStr = string.Format(ExcelFileCreator.ConnStr, dataSourcePath);
             var dbConn = new SQLiteConnection(connStr);
             var query = @"SELECT * FROM AmmoInfo";
             var adapter = new SQLiteDataAdapter(query, dbConn);
@@ -59,62 +56,61 @@
 
             using (var excelPackage = new ExcelPackage(excelFile))
             {
-                // Add a new worksheet to the excel file
                 var worksheet = excelPackage.Workbook.Worksheets.Add(sheetName);
-
-                // Fill in data, beginning from the most top left cell
                 worksheet.Cells[ExcelFileCreator.ReportStartCell].LoadFromDataTable(dataTable, true, TableStyles.None);
-
-                // Create the .xlsx file
                 excelPackage.Save();
             }
         }
 
-        private static DataTable MergeDataTables(DataTable t1, DataTable t2)
+        private static DataTable MergeDataTables(DataTable sqliteData, DataTable mySqlData)
         {
-            var result = new DataTable();
+            var dtResult = new DataTable();
+            dtResult.Columns.Add("Weapon Name", typeof(string));
+            dtResult.Columns.Add("Manufacturere Name", typeof(string));
+            dtResult.Columns.Add("Quantity Sold", typeof(int));
+            dtResult.Columns.Add("Income", typeof(decimal));
+            dtResult.Columns.Add("Expenses", typeof(int));
+            dtResult.Columns.Add("Financial Result", typeof(int));
 
-            var res = t1.AsEnumerable();
+            var result = from mySqlRows in mySqlData.AsEnumerable()
+                         join sqliteRows in sqliteData.AsEnumerable()
+                         on mySqlRows.Field<int>("WeaponId") equals sqliteRows.Field<long>("WeaponId")
+                         orderby mySqlRows.Field<decimal>("Income")
+                         select new object[]
+                         {
+                             mySqlRows.Field<string>("WeaponName"),
+                             mySqlRows.Field<string>("ManufacturerName"),
+                             mySqlRows.Field<int>("Quantity"),
+                             mySqlRows.Field<decimal>("Income"),
+                             (sqliteRows.Field<long>("TotalGiftAmmoPrice") *  mySqlRows.Field<int>("Quantity")),
+                             (mySqlRows.Field<decimal>("Income") - ((decimal)sqliteRows.Field<long>("TotalGiftAmmoPrice") *  mySqlRows.Field<int>("Quantity")))
+                         };
 
-            foreach (DataRow row in res)
+            foreach (var row in result)
             {
-                var rowHasData = row.ItemArray.Any(i => i != DBNull.Value);
-
-                if (rowHasData)
-                {
-                    Console.WriteLine(row["weaponid"]);
-                    Console.WriteLine(row["ammosold"]);
-                }
+                var newRow = dtResult.NewRow();
+                newRow.ItemArray = row;
+                dtResult.Rows.Add(newRow);
             }
 
-            Console.WriteLine();
+            var totalQuantitySold = result.Select(r => (int)r[2]).Sum();
+            var totalIncome = result.Select(r => (decimal)r[3]).Sum();
+            var totalExpenses = result.Select(r => (long)r[4]).Sum();
+            var totalFinancialResult = result.Select(r => (decimal)r[5]).Sum();
 
-            //Console.WriteLine("SQLite");
-            //foreach (DataRow item in t1.Rows)
-            //{
-            //    var items = item.ItemArray;
+            var finalRow = dtResult.NewRow();
+            finalRow.ItemArray = new object[]
+                {
+                    "Totals:", 
+                    " - ", 
+                    totalQuantitySold, 
+                    totalIncome, 
+                    totalExpenses, 
+                    totalFinancialResult 
+                };
+            dtResult.Rows.Add(finalRow);
 
-            //    foreach (var i in items)
-            //    {
-            //        Console.WriteLine(i);
-            //    }
-            //}
-
-            //Console.WriteLine();
-            //Console.WriteLine();
-            //Console.WriteLine("MySQL");
-
-            //foreach (DataRow item in t2.Rows)
-            //{
-            //    var items = item.ItemArray;
-
-            //    foreach (var i in items)
-            //    {
-            //        Console.WriteLine(i);
-            //    }
-            //}
-
-            return result;
+            return dtResult;
         }
     }
 }

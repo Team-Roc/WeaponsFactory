@@ -11,7 +11,7 @@ namespace WeaponsFactory.ConsoleClient
     using WeaponsFactory.DataAccess;
     using WeaponsFactory.ExcelIO;
 
-    public static class WeaponsFactoryModule
+    public static class WeaponsFactoryFacade
     {
         private const string ZipReportFilePath = "../../../InputData/WeaponsFactorySalesReports.zip";
         private const string PdfReportFilePath = "../../../Reports/PDF/Report.pdf";
@@ -97,7 +97,10 @@ namespace WeaponsFactory.ConsoleClient
         /// </summary>
         public static void GenerateExcelReportFromSQLiteAndMySqlDb()
         {
-            ExcelFileCreator.GenerateExcelReport(ExcelReportFilePath);
+            var outputFilePath = @"..\..\..\Reports\Excel\WeaponsFactoryFinancialResult.xlsx";
+            var dataSourcePath = @"..\..\..\InputData\AmmoOffered.sqlite";
+
+            ExcelFileCreator.GenerateExcelReport(outputFilePath, dataSourcePath);
         }
     }
 }

@@ -54,7 +54,7 @@
   <ItemGroup>
     <Compile Include="WeaponsFactoryConsoleClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WeaponsFactoryModule.cs" />
+    <Compile Include="WeaponsFactoryFacade.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

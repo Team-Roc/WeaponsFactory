@@ -7,19 +7,19 @@
         public static void Main()
         {
             Console.Write("Database initializing... ");
-            WeaponsFactoryModule.InitializeData();
+            WeaponsFactoryFacade.InitializeData();
             Console.WriteLine("Done!");
 
             Console.Write("MongoDb to SqlDb... ");
-            WeaponsFactoryModule.MoveMongoDbDataToSqlDb();
+            WeaponsFactoryFacade.MoveMongoDbDataToSqlDb();
             Console.WriteLine("Done!");
 
             Console.Write("Excel to SqlDb... ");
-            WeaponsFactoryModule.LoadDataFromExcelInSqlDb();
+            WeaponsFactoryFacade.LoadDataFromExcelInSqlDb();
             Console.WriteLine("Done!");
 
             Console.Write("SqlDb to PDF... ");
-            WeaponsFactoryModule.GeneratePDFReport();
+            WeaponsFactoryFacade.GeneratePDFReport();
             Console.WriteLine("Done!");
 
             //Console.Write("SqlDb to Xml... ");
@@ -27,20 +27,20 @@
             //Console.WriteLine("Done!");
 
             Console.Write("SqlDb to Json... ");
-            WeaponsFactoryModule.GenerateJsonReport();
+            WeaponsFactoryFacade.GenerateJsonReport();
             Console.WriteLine("Done!");
 
             Console.Write("Json to MySql... ");
-            WeaponsFactoryModule.SaveJsonInMySqlDb();
+            WeaponsFactoryFacade.SaveJsonInMySqlDb();
             Console.WriteLine("Done!");
 
             //Console.Write("Json to MySql... ");
             //WeaponsFactoryModule.LoadDataFromXmlInMongoDb();
             //Console.WriteLine("Done!");
 
-            //Console.Write("Json to MySql... ");
-            //WeaponsFactoryModule.GenerateExcelReportFromSQLiteAndMySqlDb();
-            //Console.WriteLine("Done!");
+            Console.Write("Json to MySql... ");
+            WeaponsFactoryFacade.GenerateExcelReportFromSQLiteAndMySqlDb();
+            Console.WriteLine("Done!");
         }
     }
 }
