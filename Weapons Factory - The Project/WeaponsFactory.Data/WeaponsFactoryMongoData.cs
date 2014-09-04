@@ -4,19 +4,13 @@
 
 namespace WeaponsFactory.Data
 {
-    using System;
-    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
-
-    using MongoDB.Bson;
-    using MongoDB.Bson.Serialization.Attributes;
+    
     using MongoDB.Driver;
-    using MongoDB.Driver.Builders;
 
-    using WeaponsFactory.Data;
-    using WeaponsFactory.Models.SqlModels;
     using WeaponsFactory.Models.MongoModels;
+    using WeaponsFactory.Models.SqlModels;
 
     /// <summary>
     /// Represents the data of WeaponsFactory Mongo database
@@ -35,8 +29,8 @@ namespace WeaponsFactory.Data
         public WeaponsFactoryMongoData(IWeaponsFactoryData sqlData)
         {
             this.mongoClient = new MongoClient("mongodb://127.0.0.1");
-            this.server = mongoClient.GetServer();
-            this.mongoDb = server.GetDatabase("WeaponsFactory");
+            this.server = this.mongoClient.GetServer();
+            this.mongoDb = this.server.GetDatabase("WeaponsFactory");
             this.sqlData = sqlData;
         }
 

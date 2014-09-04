@@ -6,41 +6,23 @@
     {
         public static void Main()
         {
-            Console.Write("Database initializing... ");
-            WeaponsFactoryFacade.InitializeData();
-            Console.WriteLine("Done!");
+            try
+            {
+                WeaponsFactoryFacade.InitializeData();
+                WeaponsFactoryFacade.MoveMongoDbDataToSqlDb();
+                WeaponsFactoryFacade.LoadDataFromExcelInSqlDb();
+                WeaponsFactoryFacade.GeneratePDFReport();
+                WeaponsFactoryFacade.GenerateXmlReport();
+                WeaponsFactoryFacade.GenerateJsonReport();
+                WeaponsFactoryFacade.SaveJsonInMySqlDb();
+                WeaponsFactoryFacade.LoadDataFromXmlInMongoDb();
+                WeaponsFactoryFacade.GenerateExcelReportFromSQLiteAndMySqlDb();
 
-            Console.Write("MongoDb to SqlDb... ");
-            WeaponsFactoryFacade.MoveMongoDbDataToSqlDb();
-            Console.WriteLine("Done!");
-
-            Console.Write("Excel to SqlDb... ");
-            WeaponsFactoryFacade.LoadDataFromExcelInSqlDb();
-            Console.WriteLine("Done!");
-
-            Console.Write("SqlDb to PDF... ");
-            WeaponsFactoryFacade.GeneratePDFReport();
-            Console.WriteLine("Done!");
-
-            //Console.Write("SqlDb to Xml... ");
-            //WeaponsFactoryModule.GenerateXmlReport();
-            //Console.WriteLine("Done!");
-
-            Console.Write("SqlDb to Json... ");
-            WeaponsFactoryFacade.GenerateJsonReport();
-            Console.WriteLine("Done!");
-
-            Console.Write("Json to MySql... ");
-            WeaponsFactoryFacade.SaveJsonInMySqlDb();
-            Console.WriteLine("Done!");
-
-            //Console.Write("Json to MySql... ");
-            //WeaponsFactoryModule.LoadDataFromXmlInMongoDb();
-            //Console.WriteLine("Done!");
-
-            Console.Write("Json to MySql... ");
-            WeaponsFactoryFacade.GenerateExcelReportFromSQLiteAndMySqlDb();
-            Console.WriteLine("Done!");
+            }
+            catch (Exception ex)
+            {
+                WeaponsFactoryConsoleWriter.Error(ex.Message);
+            }
         }
     }
 }

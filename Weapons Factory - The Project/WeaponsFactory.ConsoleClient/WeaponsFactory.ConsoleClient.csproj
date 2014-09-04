@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="WeaponsFactoryConsoleClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeaponsFactoryConsoleWriter.cs" />
     <Compile Include="WeaponsFactoryFacade.cs" />
   </ItemGroup>
   <ItemGroup>

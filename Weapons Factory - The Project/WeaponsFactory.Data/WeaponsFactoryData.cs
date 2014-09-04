@@ -63,7 +63,7 @@
             }
         }
 
-        public void GenerateJsonReports ()
+        public void GenerateJsonReports()
         {
             SerializeJson.SerializeWeapons(this.context);
         }

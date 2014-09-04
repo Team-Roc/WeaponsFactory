@@ -20,7 +20,7 @@
                     Income = sale.Quantity * sale.UnitPrice
                 };
 
-            //var productsReports = context.Weapons.Join(context.Sales, w => w.WeaponId, s => s.WeaponId, (w, s) => new
+            // var productsReports = context.Weapons.Join(context.Sales, w => w.WeaponId, s => s.WeaponId, (w, s) => new
             //    {
             //        WeaponId = w.WeaponId,
             //        WeaponName = w.Name,

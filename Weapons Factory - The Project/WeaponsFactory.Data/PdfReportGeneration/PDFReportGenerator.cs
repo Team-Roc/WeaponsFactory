@@ -47,7 +47,6 @@
             var salesReportEntries = from s in this.weaponsFactoryData.Sales.All()
                                      join w in this.weaponsFactoryData.Weapons.All() on s.WeaponId equals w.WeaponId
                                      join ven in this.weaponsFactoryData.Vendors.All() on s.VendorId equals ven.VendorId
-
                                      select new PdfSaleReportEntry
                                      {
                                          Name = w.Name,
@@ -94,8 +93,9 @@
 
         private void SetTableTitle(PdfPTable table, int tableColumnsNumber, DateTime startDate, DateTime endDate)
         {
-            var cell = new PdfPCell(new Phrase(string.Format("Weapons Factory - Aggregated Sales Report ({0} - {1})",
-                startDate.ToString(DateTimeFormat), endDate.ToString(DateTimeFormat))));
+            var cell = new PdfPCell(new Phrase(string.Format(
+                "Weapons Factory - Aggregated Sales Report ({0} - {1})", startDate.ToString(DateTimeFormat),
+                endDate.ToString(DateTimeFormat))));
 
             cell.Colspan = tableColumnsNumber;
             cell.HorizontalAlignment = 1;

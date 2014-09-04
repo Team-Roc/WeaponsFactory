@@ -66,6 +66,10 @@
                 foreach (var weaponNode in weaponsList)
                 {
                     var name = node.Attributes["name"].Value;
+                    foreach (var item in node.Attributes["name"])
+                    {
+                        Console.WriteLine(item);
+                    }
                     var description = node.Attributes["description"].Value;
                     var manufacturerId = node.Attributes["manufacturerId-price"].Value;
 
@@ -92,10 +96,10 @@
             foreach (var sale in salesToImport)
             {
                 db.Sales.Add(sale);
-            }            
+            }
         }
 
-        public static void ImportCategoriesXMLToSql(IWeaponsFactoryDbContext db, string fullFilePath)
+        public static void ImportCategoriesXMLToSql(IWeaponsFactoryData db, string fullFilePath)
         {
             var categoriesToImport = GetCategoriesFromFile(fullFilePath);
 

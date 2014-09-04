@@ -13,7 +13,6 @@
     {
         private const string ReportStartCell = "A1";
         private const string ConnStr = @"Data Source={0};Version=3;";
-        //private const string SqliteFilePath = @"D:\AmmoOffered.sqlite";
 
         public static void GenerateExcelReport(string reportFilePath, string dataSourcePath, string sheetName = "Sheet1")
         {
@@ -29,14 +28,14 @@
         {
             var result = new DataTable();
 
-            var connStr = string.Format(ExcelFileCreator.ConnStr, dataSourcePath);
-            var dbConn = new SQLiteConnection(connStr);
+            var connectionString = string.Format(ExcelFileCreator.ConnStr, dataSourcePath);
+            var dbConnection = new SQLiteConnection(connectionString);
             var query = @"SELECT * FROM AmmoInfo";
-            var adapter = new SQLiteDataAdapter(query, dbConn);
+            var adapter = new SQLiteDataAdapter(query, dbConnection);
 
-            using (dbConn)
+            using (dbConnection)
             {
-                dbConn.Open();
+                dbConnection.Open();
                 adapter.Fill(result);
             }
 
@@ -82,8 +81,8 @@
                              mySqlRows.Field<string>("ManufacturerName"),
                              mySqlRows.Field<int>("Quantity"),
                              mySqlRows.Field<decimal>("Income"),
-                             (sqliteRows.Field<long>("TotalGiftAmmoPrice") *  mySqlRows.Field<int>("Quantity")),
-                             (mySqlRows.Field<decimal>("Income") - ((decimal)sqliteRows.Field<long>("TotalGiftAmmoPrice") *  mySqlRows.Field<int>("Quantity")))
+                             (sqliteRows.Field<long>("TotalGiftAmmoPrice") * mySqlRows.Field<int>("Quantity")),
+                             (mySqlRows.Field<decimal>("Income") - ((decimal)sqliteRows.Field<long>("TotalGiftAmmoPrice") * mySqlRows.Field<int>("Quantity")))
                          };
 
             foreach (var row in result)

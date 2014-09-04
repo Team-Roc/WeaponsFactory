@@ -55,15 +55,15 @@
             this.ChangeState(entity, EntityState.Detached);
         }
 
+        public void SaveChanges()
+        {
+            this.context.SaveChanges();
+        }
+        
         private void ChangeState(T entity, EntityState state)
         {
             this.context.Set<T>().Attach(entity);
             this.context.Entry(entity).State = state;
-        }
-
-        public void SaveChanges()
-        {
-            this.context.SaveChanges();
         }
     }
 }
