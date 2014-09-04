@@ -40,5 +40,30 @@
 
             return sales;
         }
+
+        public static IEnumerable<Category> GetCategoryFromFile(string fullFilePath)
+        {
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(fullFilePath);
+
+            var xmlQueryString = "/categories/category";
+            XmlNodeList nodesList = xmlDoc.SelectNodes(xmlQueryString);
+
+            var categories = new HashSet<Category>();
+
+            foreach (XmlNode node in nodesList)
+            {
+                var categoryName = node.Attributes["name"].Value;
+
+                var newCategory = new Category()
+                {
+                    Name = categoryName
+                };
+
+                categories.Add(newCategory);
+            }
+
+            return categories;
+        }
     }
 }
