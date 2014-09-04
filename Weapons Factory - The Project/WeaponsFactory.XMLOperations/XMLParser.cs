@@ -47,18 +47,36 @@
             xmlDoc.Load(fullFilePath);
 
             var xmlQueryString = "/categories/category";
-            XmlNodeList nodesList = xmlDoc.SelectNodes(xmlQueryString);
+            var nodesList = xmlDoc.SelectNodes(xmlQueryString);
 
             var categories = new HashSet<Category>();
 
             foreach (XmlNode node in nodesList)
             {
                 var categoryName = node.Attributes["name"].Value;
-
+                
                 var newCategory = new Category()
                 {
                     Name = categoryName
                 };
+
+                var weaponsList = node.SelectNodes("weapon");
+
+                foreach (var weaponNode in weaponsList)
+                {
+                    var name = node.Attributes["name"].Value;
+                    var description = node.Attributes["description"].Value;
+                    var manufacturerId = node.Attributes["manufacturerId-price"].Value;
+
+                    Weapon newWeapon = new Weapon()
+                    {
+                        Name = name,
+                        Description = description,
+                        ManufacturerId = int.Parse(manufacturerId)
+                    };
+
+                    newCategory.Weapons.Add(newWeapon);
+                }
 
                 categories.Add(newCategory);
             }
