@@ -3,46 +3,32 @@
     using System;
     using System.Collections.Generic;
     using System.Xml;
-
     using WeaponsFactory.Data;
+    using WeaponsFactory.Models.MongoModels;
     using WeaponsFactory.Models.SqlModels;
 
     public static class XMLParser
     {
-        public static IEnumerable<Sale> GetSalesFromFile(string fullFilePath)
+        private static Random random = new Random();
+        private static HashSet<MongoWeapon> mongoWeapons = new HashSet<MongoWeapon>();
+
+        public static void ImportCategoriesXMLToSqlAndMongoDb(IWeaponsFactoryData sqlDb, WeaponsFactoryMongoData mongoDb, string fullFilePath)
         {
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(fullFilePath);
+            var categoriesToImport = GetCategoriesFromFile(fullFilePath);
 
-            var xmlQueryString = "/sales/sale";
-            XmlNodeList nodesList = xmlDoc.SelectNodes(xmlQueryString);
-
-            var sales = new HashSet<Sale>();
-
-            foreach (XmlNode node in nodesList)
+            foreach (var category in categoriesToImport)
             {
-                var date = node.SelectSingleNode("summary").Attributes["date"].Value;
-                var quantity = node.SelectSingleNode("summary").Attributes["quantity"].Value;
-                var unitPrice = node.SelectSingleNode("summary").Attributes["unit-price"].Value;
-                var vendorId = node.Attributes["vendorId"].Value;
-                var weaponId = node.SelectSingleNode("summary").Attributes["weaponId"].Value;
-
-                Sale newSale = new Sale()
-                {
-                    Date = DateTime.Parse(date),
-                    Quantity = int.Parse(quantity),
-                    UnitPrice = decimal.Parse(unitPrice),
-                    VendorId = int.Parse(vendorId),
-                    WeaponId = int.Parse(weaponId)
-                };
-
-                sales.Add(newSale);
+                sqlDb.Weapons.AddRange(category.Weapons);
+                sqlDb.Weapons.SaveChanges();
             }
 
-            return sales;
+            foreach (var weapon in mongoWeapons)
+            {
+                mongoDb.InsertEntity(weapon, "Weapons");
+            }
         }
 
-        public static IEnumerable<Category> GetCategoriesFromFile(string fullFilePath)
+        private static IEnumerable<Category> GetCategoriesFromFile(string fullFilePath)
         {
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(fullFilePath);
@@ -63,50 +49,38 @@
 
                 var weaponsList = node.SelectNodes("weapon");
 
-                foreach (var weaponNode in weaponsList)
+                foreach (XmlNode weaponNode in weaponsList)
                 {
-                    var name = node.Attributes["name"].Value;
-                    foreach (var item in node.Attributes["name"])
-                    {
-                        Console.WriteLine(item);
-                    }
-                    var description = node.Attributes["description"].Value;
-                    var manufacturerId = node.Attributes["manufacturerId-price"].Value;
+                    var name = weaponNode.Attributes["name"].Value;
+                    var description = weaponNode.Attributes["description"].Value;
+                    var manufacturerId = weaponNode.Attributes["manufacturerId"].Value;
+                    var categoryId = weaponNode.Attributes["categoryId"].Value;
 
-                    Weapon newWeapon = new Weapon()
+                    var newWeapon = new Weapon()
                     {
                         Name = name,
                         Description = description,
-                        ManufacturerId = int.Parse(manufacturerId)
+                        ManufacturerId = int.Parse(manufacturerId),
+                        CategoryId = int.Parse(categoryId)
+                    };
+
+                    var newMongoWeapon = new MongoWeapon()
+                    {
+                        WeaponId = random.Next(11, 100),
+                        Name = name,
+                        Description = description,
+                        ManufacturerId = int.Parse(manufacturerId),
+                        CategoryId = int.Parse(categoryId),
                     };
 
                     newCategory.Weapons.Add(newWeapon);
+                    mongoWeapons.Add(newMongoWeapon);
                 }
 
                 categories.Add(newCategory);
             }
 
             return categories;
-        }
-
-        public static void ImportSalesXMLToSql(IWeaponsFactoryDbContext db, string fullFilePath)
-        {
-            var salesToImport = GetSalesFromFile(fullFilePath);
-
-            foreach (var sale in salesToImport)
-            {
-                db.Sales.Add(sale);
-            }
-        }
-
-        public static void ImportCategoriesXMLToSql(IWeaponsFactoryData db, string fullFilePath)
-        {
-            var categoriesToImport = GetCategoriesFromFile(fullFilePath);
-
-            foreach (var category in categoriesToImport)
-            {
-                db.Categories.Add(category);
-            }
         }
     }
 }

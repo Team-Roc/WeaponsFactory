@@ -15,6 +15,7 @@ namespace WeaponsFactory.ConsoleClient
     public static class WeaponsFactoryFacade
     {
         private const string ZipReportFilePath = "../../../InputData/WeaponsFactorySalesReports.zip";
+        private const string XmlCategoriesFilePath = "../../../InputData/Categories.xml";
         private const string DataSourcesSQLitePath = "../../../InputData/AmmoOffered.sqlite";
         private const string PdfReportFilePath = "../../../Reports/PDF/Report.pdf";
         private const string XmlReportFilePath = "../../../Reports/XML/Report.xml";
@@ -27,7 +28,7 @@ namespace WeaponsFactory.ConsoleClient
         private const string GenerateXmlReportMessage = "SqlDb to Xml... ";
         private const string GenerateJsonReportMessage = "SqlDb to Json... ";
         private const string SaveJsonInMySqlDbMessage = "Json to MySqlDb... ";
-        private const string LoadDataFromXmlInMongoDbMessage = "Xml to MongoDb... ";
+        private const string LoadDataFromXmlInSqlAndMongoDbMessage = "Xml to SqlDb and MongoDb... ";
         private const string GenerateExcelReportFromSQLiteAndMySqlDbMessage = "SQLite and MySqlDb to Excel... ";
         private const string SuccessMessage = "Done!";
 
@@ -35,6 +36,7 @@ namespace WeaponsFactory.ConsoleClient
         private static DateTime pdfReportEndDate = new DateTime(2014, 1, 1);
 
         private static IWeaponsFactoryData weaponsFactorySqlData;
+        private static WeaponsFactoryMongoData weaponsFactoryMongoData;
         private static WeaponsFactoryModel weaponsFactoryDataAccess;
 
         /// <summary>
@@ -45,6 +47,7 @@ namespace WeaponsFactory.ConsoleClient
             WeaponsFactoryConsoleWriter.StartProcess(InitializeDataMessage);
 
             weaponsFactorySqlData = new WeaponsFactoryData();
+            weaponsFactoryMongoData = new WeaponsFactoryMongoData(weaponsFactorySqlData);
             weaponsFactoryDataAccess = new WeaponsFactoryModel();
 
             WeaponsFactoryConsoleWriter.Success(SuccessMessage);
@@ -57,8 +60,7 @@ namespace WeaponsFactory.ConsoleClient
         {
             WeaponsFactoryConsoleWriter.StartProcess(TransferDataToSqlDbMessage);
 
-            var mongoData = new WeaponsFactoryMongoData(weaponsFactorySqlData);
-            mongoData.TransferDataToSqlDb();
+            weaponsFactoryMongoData.TransferDataToSqlDb();
 
             WeaponsFactoryConsoleWriter.Success(SuccessMessage);
         }
@@ -96,7 +98,7 @@ namespace WeaponsFactory.ConsoleClient
         public static void GenerateXmlReport()
         {
             WeaponsFactoryConsoleWriter.StartProcess(GenerateXmlReportMessage);
-            
+
             XMLReportsGenerator.GenerateSalesReport(weaponsFactorySqlData, XmlReportFilePath);
 
             WeaponsFactoryConsoleWriter.Success(SuccessMessage);
@@ -129,11 +131,11 @@ namespace WeaponsFactory.ConsoleClient
         /// <summary>
         /// Load data from XML and save it in Mongo database
         /// </summary>
-        public static void LoadDataFromXmlInMongoDb()
+        public static void LoadDataFromXmlInSqlAndMongoDb()
         {
-            WeaponsFactoryConsoleWriter.StartProcess(LoadDataFromXmlInMongoDbMessage);
+            WeaponsFactoryConsoleWriter.StartProcess(LoadDataFromXmlInSqlAndMongoDbMessage);
 
-            //TODO!
+            XMLParser.ImportCategoriesXMLToSqlAndMongoDb(weaponsFactorySqlData, weaponsFactoryMongoData, XmlCategoriesFilePath);
 
             WeaponsFactoryConsoleWriter.Success(SuccessMessage);
         }

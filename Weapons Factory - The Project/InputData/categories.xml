@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <categories>
   <category name="VampSlicers">
-	<weapon name="HeadCutter" description="Fine blade to easily slice off a vamp's head" manufacturerId="2" />
-	<weapon name="StrongAxe" description="One-swing vamp slicer" manufactorerId="2" />
+	<weapon name="HeadCutter" description="Fine blade to easily slice off a vamp's head" manufacturerId="2" categoryId="7" />
+	<weapon name="StrongAxe" description="One-swing vamp slicer" manufacturerId="2" categoryId="2" />
   </category>
   <category name="WerewolfBane">
-	<weapon name="SilverCrossbow" description="Crossbow especially made for silver-head arrows" manufacturerId="3" />
+	<weapon name="SilverCrossbow" description="Crossbow especially made for silver-head arrows" manufacturerId="3" categoryId="6" />
   </category>
   <category name="ShowroomSabres">
-	<weapon name="FirstHuntersSabre" description="The very first hunter's sabre replica" manufacturerId="3" />
+	<weapon name="FirstHuntersSabre" description="The very first hunter's sabre replica" manufacturerId="3" categoryId="9" />
   </category>  
 </categories>

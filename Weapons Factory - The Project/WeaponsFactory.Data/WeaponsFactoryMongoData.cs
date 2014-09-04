@@ -169,7 +169,7 @@ namespace WeaponsFactory.Data
         /// <typeparam name="T">Mongo database model.</typeparam>
         /// <param name="entity">The entity.</param>
         /// <param name="collectionName">Mongo database collection name.</param>
-        private void InsertEntity<T>(T entity, string collectionName)
+        public void InsertEntity<T>(T entity, string collectionName)
         {
             var mongoEntities = this.mongoDb.GetCollection<T>(collectionName);
             mongoEntities.Insert(entity);

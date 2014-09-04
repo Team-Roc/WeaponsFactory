@@ -15,9 +15,8 @@
                 WeaponsFactoryFacade.GenerateXmlReport();
                 WeaponsFactoryFacade.GenerateJsonReport();
                 WeaponsFactoryFacade.SaveJsonInMySqlDb();
-                WeaponsFactoryFacade.LoadDataFromXmlInMongoDb();
+                WeaponsFactoryFacade.LoadDataFromXmlInSqlAndMongoDb();
                 WeaponsFactoryFacade.GenerateExcelReportFromSQLiteAndMySqlDb();
-
             }
             catch (Exception ex)
             {
