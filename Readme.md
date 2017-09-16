@@ -1,7 +1,7 @@
-#Databases
-####Team Project, August – September 2014
+# Databases
+#### Team Project, August – September 2014
 
-##Contributors:
+## Contributors:
 * Dimitar Katarov ([@ chichuMitku](https://github.com/chichuMitku))
 * Georgi Prodanov ([@ georgiwe](https://github.com/georgiwe))
 * Konstantin Severy ([@ ksevery](https://github.com/ksevery))
